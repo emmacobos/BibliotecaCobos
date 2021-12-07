@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Genre</title>
 </head>
 <body>
@@ -22,26 +23,58 @@
             </ul>
         </div>
         <div class="contenedor contenedor__genre">
-            <p class="title__bestsellers">Genre of the best sellers</p>
-            <div class="books__genre">
-                <p class="bestsellers titles">Best Sellers</p>
-                <img class="info__bestsellers" src="../images/thehungergames.jpg" alt="The Hunger Games">
-                <p class="date titles">Genre</p>
-                <div class="info__date">
-                    <ul>
-                        <li>Adventure</li>
-                        <li>Science fiction</li>
-                    </ul>
-                </div>
+            <div class="contenedor__genre__desktop">
+            <p class="title__bestsellers anima animate__animated animate__backInLeft">Genre of the best sellers</p>
+                <table>
+                    <thread>
+                        <tr>
+                            <th class="titles">Best Sellers</th>
+                            <th class="titles">Genre</th>
+                        </tr>
+                        <tr>
+                            <td><img class="info__bestsellers" src="../images/thehungergames.jpg" alt="The Hunger Games"></td>
+                            <td>
+                                <ul>
+                                    <li>Adventure</li>
+                                    <li>Science fiction</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img class="info__bestsellers" src="../images/divergent.jpg" alt="Divergent"></td>
+                            <td>
+                                <ul>
+                                    <li>Dystopian</li>
+                                    <li>Speculative Fiction</li>
+                                    <li>Young Adult</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </thread>
+                </table>
             </div>
-            <div class="books_genre2">
-                <img class="info__bestsellers" src="../images/divergent.jpg" alt="Divergent">
-                <div class="info__date">
-                    <ul>
-                        <li>Dystopian</li>
-                        <li>Speculative Fiction</li>
-                        <li>Young Adult</li>
-                    </ul>
+            <div class="contenedor__genre__responsive">
+                <p class="title__bestsellers">Genre of the best sellers</p>
+                <div class="books__genre">
+                    <p class="titles">Best Sellers</p>
+                    <img class="info__bestsellers" src="../images/thehungergames.jpg" alt="The Hunger Games">
+                    <p class="date titles">Genre</p>
+                    <div class="info__date">
+                        <ul>
+                            <li>Adventure</li>
+                            <li>Science fiction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="books__genre">
+                    <img class="info__bestsellers" src="../images/divergent.jpg" alt="Divergent">
+                    <div class="info__date">
+                        <ul>
+                            <li>Dystopian</li>
+                            <li>Speculative Fiction</li>
+                            <li>Young Adult</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,9 +82,9 @@
             <img src="../images/book.png" alt="Book">
             <p>All rights reserved</p>
             <div class="rrss">
-                <a href="#"><img src="../images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="../images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="../images/twitter.png" alt="Twitter"></a>
+                <div><a href="#"><img src="../images/facebook.png" alt="Facebook"></a></div>
+                <div><a href="#"><img src="../images/instagram.png" alt="Instagram"></a></div>
+                <div><a href="#"><img src="../images/twitter.png" alt="Twitter"></a></div>
             </div>
         </div>
     </div>

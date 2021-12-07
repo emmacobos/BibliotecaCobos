@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Contact</title>
 </head>
 <body>
@@ -23,36 +24,45 @@
         </div>
         <div class="contenedor contenedor__contact">
             <form class="contenedor__form">
-                <p>You can contact us!</p>
-                <label for="name">Name:</label>	
-                <input type="text" name="name">
-                <label for="lastname">Last name:</label>	
-                <input type="text" name="lastname">
-                <label for="email">E-mail</label>	
-                <input class="email" type="email" name="email" placeholder="email@gmail.com">
-                <select name="sex">
-                    <option value="Female">Female</option>
-                    <option value="Male">Male</option>
-                </select>
-                <textarea placeholder="Why do you want to contact us?"></textarea>
-                <div class="contenedor__form__checkbox">
+                <p class="anima animate__animated animate__backInLeft">You can contact us!</p>
+                <ul class="form__contact">
+                  <li>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstName" placeholder="Enter your first name here">
+                  </li>
+                  <li>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="lastName" placeholder="Enter your last name here">
+                  </li>
+                  <li>
+                    <label for="email">E-mail</label>
+                    <input class="email" type="email" name="email"  placeholder="email@gmail.com">
+                  </li>
+                  <li>
+                    <label for="message">Message</label>
+                    <textarea rows="4" id="message" placeholder="Why do you want to contact us?"></textarea>
+                  </li>
+                  <li class="contenedor__form__checkbox">
                     <div>To send the form you must accept the terms and conditions</div>
                     <div>
                         <label for="text">I agree</label>
-                        <input type="checkbox" name="iagree" value="1" />
+                        <input type="checkbox" name="iagree" value="1"/>
                     </div>
-                </div>
-                <input class="button" type="reset" value="Clean">
-                <input class="button button__submit" type="submit" value="Send">
-            </form>
+                  </li>
+                  <li class="buttons">
+                        <button class="button button__reset" type="reset">Clean</button>
+                        <button class="button button__submit" type="submit">Send</button>
+                  </li>
+                </ul>
+              </form>
         </div>
         <div class="footer">
             <img src="../images/book.png" alt="Book">
             <p>All rights reserved</p>
             <div class="rrss">
-                <a href="#"><img src="../images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="../images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="../images/twitter.png" alt="Twitter"></a>
+                <div><a href="#"><img src="../images/facebook.png" alt="Facebook"></a></div>
+                <div><a href="#"><img src="../images/instagram.png" alt="Instagram"></a></div>
+                <div><a href="#"><img src="../images/twitter.png" alt="Twitter"></a></div>
             </div>
         </div>
     </div>
