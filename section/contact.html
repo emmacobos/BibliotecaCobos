@@ -1,70 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../images/book.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>Contact</title>
-</head>
-<body>
-    <div id="contenedorContact">
-        <div class="header">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0 mb-5">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
             <a href="../index.html"><img src="../images/book.png" alt="Book"></a>
-            <ul class="nav">
-                <li><a href="../section/bestsellers.html">Best Sellers</a></li>
-                <li><a href="../section/genre.html">Genre</a></li>
-                <li><a href="../section/kids.html">Kids</a></li>
-                <li><a href="../section/contact.html">Contact</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link pe-4 ps-4 active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4 ps-4" href="../section/bestsellers.html">Bestsellers</a>
+              </li>
+             <li class="nav-item">
+                 <a class="nav-link pe-4 ps-4" href="../section/genre.html">Genre</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link pe-4 ps-4" href="../section/kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pe-4 ps-4" href="../section/contact.html">Contact</a>
+            </li>
             </ul>
+            <form class="d-flex justify-content-end">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary border-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+    </div>
+    <div class="container contacto d-flex align-items-center flex-column">
+      <p class="d-flex justify-content-center title__bestsellers anima animate__animated animate__backInLeft mb-3">You can contact us!</p>
+      <div class="col-12 col-lg-8 col-md-9">
+        <form>
+        <div class="mb-3 row">
+          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName">
+          </div>
         </div>
-        <div class="contenedor contenedor__contact">
-            <form class="contenedor__form">
-                <p class="anima animate__animated animate__backInLeft">You can contact us!</p>
-                <ul class="form__contact">
-                  <li>
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="firstName" placeholder="Enter your first name here">
-                  </li>
-                  <li>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="lastName" placeholder="Enter your last name here">
-                  </li>
-                  <li>
-                    <label for="email">E-mail</label>
-                    <input class="email" type="email" name="email"  placeholder="email@gmail.com">
-                  </li>
-                  <li>
-                    <label for="message">Message</label>
-                    <textarea rows="4" id="message" placeholder="Why do you want to contact us?"></textarea>
-                  </li>
-                  <li class="contenedor__form__checkbox">
-                    <div>To send the form you must accept the terms and conditions</div>
-                    <div>
-                        <label for="text">I agree</label>
-                        <input type="checkbox" name="iagree" value="1"/>
-                    </div>
-                  </li>
-                  <li class="buttons">
-                        <button class="button button__reset" type="reset">Clean</button>
-                        <button class="button button__submit" type="submit">Send</button>
-                  </li>
-                </ul>
-              </form>
+        <div class="mb-3 row">
+          <label for="inputLastName" class="col-sm-2 col-form-label">Last Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputLastName">
+          </div>
         </div>
-        <div class="footer">
-            <img src="../images/book.png" alt="Book">
-            <p>All rights reserved</p>
-            <div class="rrss">
-                <div><a href="#"><img src="../images/facebook.png" alt="Facebook"></a></div>
-                <div><a href="#"><img src="../images/instagram.png" alt="Instagram"></a></div>
-                <div><a href="#"><img src="../images/twitter.png" alt="Twitter"></a></div>
-            </div>
+        <div class="mb-3 row">
+          <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Message</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="d-flex align-items-center flex-column mb-3">
+          <p>To send the form you must accept the terms and conditions</p>
+         <div class="form-check form-switch">
+          <label class="form-check-label" for="flexSwitchCheckDefault">I agree</label>
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        </div>
+        </div>
+        <div class="d-flex justify-content-center">
+         <button type="reset" class="button__reset m-2">Clean</button>
+        <button type="submit" class="button__submit m-2">Submit</button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <p class="d-flex justify-content-center title__bestsellers anima animate__animated animate__backInLeft mb-3">Or you can download our app!</p>
+        <div class="rrss d-flex justify-content-center mt-5">
+          <div class="m-4"><a class="p-2" href="#"><img src="../images/google-play.png" alt="Google Play"></a></div>
+          <div class="m-4"><a class="p-2" href="#"><img src="../images/app-store.png" alt="App Store"></a></div>
         </div>
     </div>
-</body>
+    <div class="container-fluid p-0 bg-light mt-5">
+            <div class="footer d-flex justify-content-between align-items-center flex-wrap p-4">
+                <img src="../images/book.png" alt="Book">
+                <p class="animate__animated animate__pulse">All rights reserved</p>
+                <div class="rrss d-flex">
+                    <div class="m-2"><a class="p-2" href="#"><img src="../images/facebook.png" alt="Facebook"></a></div>
+                    <div class="m-2"><a class="p-2" href="#"><img src="../images/instagram.png" alt="Instagram"></a></div>
+                    <div class="m-2"><a class="p-2" href="#"><img src="../images/twitter.png" alt="Twitter"></a></div>
+                </div>
+            </div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>

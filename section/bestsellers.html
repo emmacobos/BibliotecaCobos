@@ -1,136 +1,186 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../images/book.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>Best Sellers</title>
-</head>
-<body>
-    <div id="bestSellers">
-        <div class="header">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0 mb-5">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
             <a href="../index.html"><img src="../images/book.png" alt="Book"></a>
-            <ul class="nav">
-                <li><a href="../section/bestsellers.html">Best Sellers</a></li>
-                <li><a href="../section/genre.html">Genre</a></li>
-                <li><a href="../section/kids.html">Kids</a></li>
-                <li><a href="../section/contact.html">Contact</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link pe-4 ps-4 active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4 ps-4" href="../section/bestsellers.html">Bestsellers</a>
+              </li>
+             <li class="nav-item">
+                 <a class="nav-link pe-4 ps-4" href="../section/genre.html">Genre</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link pe-4 ps-4" href="../section/kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pe-4 ps-4" href="../section/contact.html">Contact</a>
+            </li>
             </ul>
-        </div>
-        <div class="contenedor contenedor__bestsellers">
-            <div class="books__bestsellers">
-                <p class="title__bestsellers anima animate__animated animate__backInLeft">Details of the best sellers</p>
-                    <table>
-                        <thread>
-                            <tr>
-                                <th class="titles">Best Sellers</th>
-                                <th class="titles">Publication date</th>
-                                <th class="titles">Plot</th>
-                                <th class="titles">Comments</th>
-                            </tr>
-                            <tr>
-                                <td><img src="../images/thehungergames.jpg" alt="The Hunger Games"></td>
-                                <td>September 14, 2008</td>
-                                <td class="info__plot">The story is set in Panem. There are twelve poor districts governed by the rich Capitol. The Capitol organises the Hunger Games every year to punish the districts. One boy and one girl fight in a battle. Only one person will live. The story is about Katniss Everdeen. Her younger sister, Prim, is chosen to be a “tribute”, but Katniss volunteers to go instead. The other “tribute” from District 12 is a boy named Peeta.</td>
-                                <td class="comments__bestsellers">
-                                    <ol>
-                                        <li> <i> Anna Maria said:</i>
-                                            <br>
-                                            The book was 100% better than the film. A good book to sit down with on a horrible rain day! It makes you happy to be alive and happy to know that you are not going to be entered in a competition where you are to fight to your death every year. But it's a great story!</li>
-                                        <li><i>Oliver said:</i>
-                                            <br>
-                                            I watched the movies and they were really good.Are the books better than the book? And if so should I read this trilogy?</li>
-                                        <li><i>Jack said:</i>
-                                            <br>
-                                            All three of the books are much, much, much better then the movies. The movies leave out many important parts whereas the book has a lot more depth and meaning etc in them so they are easier to understand the concept of the Hunger Games.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="../images/divergent.jpg" alt="Divergent"></td>
-                                <td>April 26, 2011</td>
-                                <td class="info__plot">This trilogy follows the life of Tris Prior, a young girl who is struggling to find her place in society. On their appointed day, every 16-year-old must pick the faction they stay with for the rest of their lives, or live factionless in contempt of society. For Tris Prior, her decision is incredibly difficult; be who she really is and join Dauntless or stay with her family and keep her feelings under lock and key. Tris chooses the Dauntless faction and a grueling initiation follows, in which her life is put at risk more than once. She is forced to fight, hurt and betray people she would never want to and friends she held dear perish. Whilst creating a new life for herself in the Dauntless faction, Tris must separate fake and real friends.  </td>
-                                <td class="comments__bestsellers">
-                                    <ol>
-                                        <li><i>Harry said:</i>
-                                            <br>
-                                            Divergent is by far one of the best book I have read!</li>
-                                        <li><i>Jacob said:</i>
-                                            <br>
-                                            Came into this with high expectations. Came away very disappointed.</li>
-                                        <li><i>Mitchael said:</i>
-                                            <br>
-                                            I have to start by saying that watching the Divergent movie made me want to read the book. I really enjoyed the movie and I thought for sure there was more in the book. Movie goers didn’t miss as much as I had hoped.
-                                        </li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </thread>
-                    </table>
-            </div>
-            <div class="responsive__bestsellers">
-                <div class="bestsellers__info">
-                    <p>Best Sellers</p>
-                    <img src="../images/thehungergames.jpg" alt="The Hunger Games">
-                    <p>Publication date</p>
-                    <div>September 14, 2008</div>
-                    <p>Plot</p>
-                    <div>The story is set in Panem. There are twelve poor districts governed by the rich Capitol. The Capitol organises the Hunger Games every year to punish the districts. One boy and one girl fight in a battle. Only one person will live. The story is about Katniss Everdeen. Her younger sister, Prim, is chosen to be a “tribute”, but Katniss volunteers to go instead. The other “tribute” from District 12 is a boy named Peeta.</div>
-                    <p>Comments</p>
-                    <div class="comments__bestsellers">
-                        <ol>
-                            <li> <i> Anna Maria said:</i>
-                                <br>
-                                The book was 100% better than the film. A good book to sit down with on a horrible rain day! It makes you happy to be alive and happy to know that you are not going to be entered in a competition where you are to fight to your death every year. But it's a great story!</li>
-                            <li><i>Oliver said:</i>
-                                    <br>
-                                I watched the movies and they were really good.Are the books better than the book? And if so should I read this trilogy?</li>
-                            <li><i>Jack said:</i>
-                                <br>
-                                All three of the books are much, much, much better then the movies. The movies leave out many important parts whereas the book has a lot more depth and meaning etc in them so they are easier to understand the concept of the Hunger Games.</li>
-                        </ol>
-                    </div>
+            <form class="d-flex justify-content-end">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary border-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+    </div>
+    <div class="container container-bestsellers-list mt-3 mb-5 d-flex flex-column align-items-center">
+        <p class="d-flex justify-content-center title__bestsellers anima animate__animated animate__backInLeft mb-3">How bestseller lists actually work</p>
+        <img class="mb-3 mt-3" src="../images/bestsellers.jpg" alt="Best Sellers">
+        <div class="description mt-5">
+            <p><strong>The New York Times bestseller list</strong></p>
+            <p>This is considered the most important bestseller list, and the only one that people tend to talk about by name. If you make this list, you put "New York Times bestseller" on the top of your books. Every other list generally gets a "National bestseller" headline.</p>
+            <div class="mb-5 mt-5">
+                <p><strong>Methodology</strong></p>
+                <p>The weekly bestsellers are calculated from Monday to Monday. Here is how they describe their methodology on their website -- "Rankings reflect sales reported by vendors offering a wide range of general interest titles. The sales venues for print books include independent book retailers; national, regional and local chains; online and multimedia entertainment retailers; supermarkets, university, gift and discount department stores; and newsstands. Ebook rankings reflect sales from leading online vendors of ebooks in a variety of popular ereader formats. Ebook sales are presently included for all adult categories (fiction, non-fiction and advice) except for graphic novels, and all children's categories with the exception of picture books. Titles are included regardless of whether they are published in both print and electronic formats or just one format. Ebooks available exclusively from a single vendor will be tracked at a future date."
+                </p><p>
+                As I mentioned before, the New York Times list is a survey list, not a tabulation of total sales. This means that they poll a curated selection of booksellers to estimate sales. They literally decide which bookstores and retail outlets are important and then only count those sales, ignoring all other sales. They also heavily weight independent bookstore sales. This is because they think that the type of people who shop at indie bookstores are more serious readers and thus their reading decisions deserve more attention. I'm serious, they have said this in public.
+                </p><p>
+                They also focus on individual sales, and try to not include bulk sales in their calculations. They do this to prevent people from buying their way onto the list. If you sell 1,000 copies to a company as part of a speaking engagement deal, this is a great way to move copies and make money, but it’s not very effective for hitting the list, because they won't count it.
+                </p><p>
+                And notice how they say that won't count ebook sales from only one source? This is a direct shot at Amazon. They don't like Amazon, and they don't think ebooks are real books. They don't want to see their ebook list dominated by Amazon's Kindle list.
+                </p><p>
+                Make no mistake about it -- this is all just as elitist and snobbish as it sounds. They only recently started including ebooks in their lists, and they still heavily discount ebooks that have no print edition. Yes they track them, but they count their sales as less.
+                </p><p>
+                The reality is that even though the New York Times list is seen as the most prestigious, in many ways it's the least connected to actual book selling reality.</p>
                 </div>
-                <div class="bestsellers__info">
-                    <p>Best Sellers</p>
-                    <img src="../images/divergent.jpg" alt="Divergent">
-                    <p>Publication date</p>
-                    <div>April 26, 2011</div>
-                    <p>Plot</p>
-                    <div>This trilogy follows the life of Tris Prior, a young girl who is struggling to find her place in society. On their appointed day, every 16-year-old must pick the faction they stay with for the rest of their lives, or live factionless in contempt of society. For Tris Prior, her decision is incredibly difficult; be who she really is and join Dauntless or stay with her family and keep her feelings under lock and key. Tris chooses the Dauntless faction and a grueling initiation follows, in which her life is put at risk more than once. She is forced to fight, hurt and betray people she would never want to and friends she held dear perish. Whilst creating a new life for herself in the Dauntless faction, Tris must separate fake and real friends.</div>
-                    <p>Comments</p>
-                    <div class="comments__bestsellers">
-                        <ol>
-                            <li><i>Harry said:</i>
-                                <br>
-                                Divergent is by far one of the best book I have read!</li>
-                            <li><i>Jacob said:</i>
-                                <br>
-                                Came into this with high expectations. Came away very disappointed.</li>
-                            <li><i>Mitchael said:</i>
-                                <br>
-                                I have to start by saying that watching the Divergent movie made me want to read the book. I really enjoyed the movie and I thought for sure there was more in the book. Movie goers didn’t miss as much as I had hoped.
-                                /li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <img src="../images/book.png" alt="Book">
-            <p>All rights reserved</p>
-            <div class="rrss">
-                <div><a href="#"><img src="../images/facebook.png" alt="Facebook"></a></div>
-                <div><a href="#"><img src="../images/instagram.png" alt="Instagram"></a></div>
-                <div><a href="#"><img src="../images/twitter.png" alt="Twitter"></a></div>
+                <div class="mb-5">
+                <p><strong>Tips and tricks</strong></p>
+                <ul>
+                    <li>For the most part, they do not count self-published books. You must work through a traditional publishing company to even have a shot at this list.</li>
+                    <li>The category and window of your release significantly impacts the number of copies required to hit the New York Times bestseller list, but 5,000 copies during any one-week period is the minimum. I would recommend 10,000 to be sure.</li>
+                    <li>Have your publisher pick a down time in publishing. The fewer big books you have to compete with, the better.</li>
+                </ul>
             </div>
         </div>
     </div>
-</div>
-</body>
+    <div class="container table-responsive d-none d-lg-block">
+        <p class="d-flex justify-content-center title__bestsellers anima animate__animated animate__backInLeft mb-3">Details of the best sellers</p>
+        <table class="table align-middle ">
+          <thead>
+            <tr>
+                <th>Best Sellers</th>
+                <th>Publication date</th>
+                <th>Plot</th>
+                <th>Comments</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td><img src="../images/thehungergames.jpg" alt="The Hunger Games"></td>
+                <td>September 14, 2008</td>
+                <td class="info__books">The story is set in Panem. There are twelve poor districts governed by the rich Capitol. The Capitol organises the Hunger Games every year to punish the districts. One boy and one girl fight in a battle. Only one person will live. The story is about Katniss Everdeen. Her younger sister, Prim, is chosen to be a “tribute”, but Katniss volunteers to go instead. The other “tribute” from District 12 is a boy named Peeta.</td>
+                <td class="info__books comments__bestsellers">
+                    <ol>
+                        <li> <i> Anna Maria said:</i>
+                            <br>
+                            The book was 100% better than the film. A good book to sit down with on a horrible rain day! It makes you happy to be alive and happy to know that you are not going to be entered in a competition where you are to fight to your death every year. But it's a great story!</li>
+                        <li><i>Oliver said:</i>
+                            <br>
+                            I watched the movies and they were really good.Are the books better than the book? And if so should I read this trilogy?</li>
+                        <li><i>Jack said:</i>
+                            <br>
+                            All three of the books are much, much, much better then the movies. The movies leave out many important parts whereas the book has a lot more depth and meaning etc in them so they are easier to understand the concept of the Hunger Games.</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="../images/divergent.jpg" alt="Divergent"></td>
+                <td>April 26, 2011</td>
+                <td class="info__books">This trilogy follows the life of Tris Prior, a young girl who is struggling to find her place in society. On their appointed day, every 16-year-old must pick the faction they stay with for the rest of their lives, or live factionless in contempt of society. For Tris Prior, her decision is incredibly difficult; be who she really is and join Dauntless or stay with her family and keep her feelings under lock and key. Tris chooses the Dauntless faction and a grueling initiation follows, in which her life is put at risk more than once. She is forced to fight, hurt and betray people she would never want to and friends she held dear perish. Whilst creating a new life for herself in the Dauntless faction, Tris must separate fake and real friends.  </td>
+                <td class="info__books comments__bestsellers">
+                    <ol>
+                        <li><i>Harry said:</i>
+                            <br>
+                            Divergent is by far one of the best book I have read!</li>
+                        <li><i>Jacob said:</i>
+                            <br>
+                            Came into this with high expectations. Came away very disappointed.</li>
+                        <li><i>Mitchael said:</i>
+                            <br>
+                            I have to start by saying that watching the Divergent movie made me want to read the book. I really enjoyed the movie and I thought for sure there was more in the book. Movie goers didn’t miss as much as I had hoped.
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            
+          </tbody>
+        </table>
+    </div>
+    <div class="container d-lg-none d-flex flex-wrap justify-content-center">
+        <p class="d-flex justify-content-center title__bestsellers anima animate__animated animate__backInLeft mb-3">Details of the best sellers</p>
+        <div class="card m-3" style="width: 18rem;">
+            <img src="../images/thehungergames.jpg" alt="The Hunger Games" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">The Hunger Games</h5>
+              <p class="card-text">September 14, 2008</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">The story is set in Panem. There are twelve poor districts governed by the rich Capitol. The Capitol organises the Hunger Games every year to punish the districts. One boy and one girl fight in a battle. Only one person will live. The story is about Katniss Everdeen. Her younger sister, Prim, is chosen to be a “tribute”, but Katniss volunteers to go instead. The other “tribute” from District 12 is a boy named Peeta.</li>
+              <li class="list-group-item">
+                <i>Harry said:</i>
+                <p>Divergent is by far one of the best book I have read!</p>
+                <br>
+                <i>Jacob said:</i>
+                <p>Came into this with high expectations. Came away very disappointed.</p>
+                <br>
+                <i>Mitchael said:</i>
+                <p>I have to start by saying that watching the Divergent movie made me want to read the book. I really enjoyed the movie and I thought for sure there was more in the book. Movie goers didn’t miss as much as I had hoped.</p>
+                </li>
+            </ul>
+          </div>
+          <div class="card m-3" style="width: 18rem;">
+            <img src="../images/divergent.jpg" alt="Divergent" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Divergent</h5>
+              <p class="card-text">April 26, 2011</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">This trilogy follows the life of Tris Prior, a young girl who is struggling to find her place in society. On their appointed day, every 16-year-old must pick the faction they stay with for the rest of their lives, or live factionless in contempt of society. For Tris Prior, her decision is incredibly difficult; be who she really is and join Dauntless or stay with her family and keep her feelings under lock and key. Tris chooses the Dauntless faction and a grueling initiation follows, in which her life is put at risk more than once. She is forced to fight, hurt and betray people she would never want to and friends she held dear perish. Whilst creating a new life for herself in the Dauntless faction, Tris must separate fake and real friends.</li>
+              <li class="list-group-item">
+                    <i>Harry said:</i>
+                    <p>Divergent is by far one of the best book I have read!</p>
+                    <br>
+                    <i>Jacob said:</i>
+                    <p>Came into this with high expectations. Came away very disappointed.</p>
+                    <br>
+                    <i>Mitchael said:</i>
+                    <p>I have to start by saying that watching the Divergent movie made me want to read the book. I really enjoyed the movie and I thought for sure there was more in the book. Movie goers didn’t miss as much as I had hoped.</p>
+                </li>
+            </ul>
+          </div>
+    </div>
+    <div class="container-fluid p-0 bg-light mt-5">
+            <div class="footer d-flex justify-content-between align-items-center flex-wrap p-4">
+                <img src="../images/book.png" alt="Book">
+                <p class="animate__animated animate__pulse">All rights reserved</p>
+                <div class="rrss d-flex">
+                    <div class="m-2"><a class="p-2" href="#"><img src="../images/facebook.png" alt="Facebook"></a></div>
+                    <div class="m-2"><a class="p-2" href="#"><img src="../images/instagram.png" alt="Instagram"></a></div>
+                    <div class="m-2"><a class="p-2" href="#"><img src="../images/twitter.png" alt="Twitter"></a></div>
+                </div>
+            </div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>
