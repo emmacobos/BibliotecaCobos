@@ -58,21 +58,16 @@ body{
 .text-container-video{
     font-size: 20px;
 }
-.info__books{
-    width: 30%;
+.img-readingbooks img{
+    width: 70%;
 }
 .card-body {
-    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .card{
-    height: fit-content;
-}
-.container-bestsellers-list img{
-    max-height: 400px;
-    max-width: 300px;
-}
-.table__genre{
-    width: fit-content;
+    background: transparent;
 }
 .container__kids img{
     width: 500px;
@@ -81,6 +76,16 @@ body{
 .container__kids img:hover {
     transform: scale(1.1);
 } 
+.button__card{
+    font-size: 14px;
+    transition: width 0.5s 0s ease-in, all 0.5s 0s ease-out;
+    color: black;
+}
+.button__card:hover{
+    color: black;
+    padding: 10px 50px 10px 50px;
+    background: linear-gradient(135deg, rgb(76 186 255 / 90%) 0%,rgb(209 224 235) 100%);
+}
 .button__submit{
     color: black;
     padding: 10px 50px 10px 50px;
@@ -151,6 +156,11 @@ body{
         font-size: 24px;
     }
 }
+@media all and (max-width:767px){
+    .text-container-video{
+        margin-top: 30px;
+    }
+}
 @media all and (max-width:480px){
     #carouselExampleCaptionsResponsive .carousel-item{
         max-height: 400px;
@@ -171,6 +181,12 @@ body{
         font-size: 18px;
     }
     .description{
+        font-size: 14px;
+    }
+    .rrss{
+        margin-top: 20px;
+    }
+    .subtitle-bestsellers{
         font-size: 14px;
     }
 }
