@@ -1,0 +1,39 @@
+	CAMBIOS SEO:
+INDEX: 
+Agregué keywords(Library, Luke Bakic, POWER, importance, READING, benefits, TED TALK) y una descripción (Dynamic library in which you find a list of ten benefits of reading and a TED Talk by Luke Bakic about POWER and the importance of READING.).
+Agregué un título (Library)
+Agregué una etiqueta nav y optimicé sus imágenes añadiéndoles figure.
+Opté por poner el carousel como header de la página.
+Añadí un section, la cual separé en header(video+info, añadí h1 como título principal y h2 cono subtítulo, figure a la imagen) y article (h3 para más títulos y figure para imágenes.)
+Para el footer añadí figure y a las etiquetas "a" les agregue "rel".
+
+BEST SELLERS:
+Agregué keywords(NYT, New York Times, Best Sellers, raking, buy, WISH YOU WERE HERE, THE 1619 PROJECT, IT ENDS WITH US) y una descripción (In this library you will find how the rankings of the best sellers work, especially the New York Times. You can also find the updated list of the best sellers so far and a direct link to buy them.).
+Agregué un título(Library Best Sellers)
+Agregué una etiqueta nav y optimicé sus imágenes añadiéndoles figure.
+Añadí un section principal con un header (con un h1 y figure).
+A la clase "description" le añadíu un h3.
+Para separar incluí un article, el cual le puse un h1, h2 y figure. A las cards dentro de éste les agregue un h3, rel y figure.
+Para el footer añadí figure y a las etiquetas "a" les agregue "rel".
+
+GENRE: 
+Agregué keywords(Genre, 2021, literary, best sellers, best-selling) y una descripción(What is the literary genre? We will show you the best-selling literary genres in 2021 and how to choose the best for you.).
+Agregué un título(Library Genre)
+Agregué una etiqueta nav y optimicé sus imágenes añadiéndoles figure.
+Cambié el div principal por un section, al cual le agregué para sus títulos h1, h2, y para las imagenes, figure.
+Dentro del section incluí un article, con un h1 y h3.
+Para el footer añadí figure y a las etiquetas "a" les agregue "rel".
+
+KIDS:
+Agregué keywords(child, read, teach, reading, book, genre, boy, girl) y una descripción(How to teach a child to read a book in 3 simple steps.).
+Agregué un título(Library Kids)
+Agregué una etiqueta nav y optimicé sus imágenes añadiéndoles figure.
+Cambié el div principal por un section, reemplace los div puestos como títulos con un h1 y h3.
+Para el footer añadí figure y a las etiquetas "a" les agregue "rel".
+
+CONTACT:
+Agregué keywords(child, read, best-sellers, teach, New York Times, 2021, reading, book, genre, raking, boy, girl) y una descripción(Contact us to learn more about reading, best-sellers, gender and the best ways for your child to learn to read.).
+Agregué un título(Library Contact)
+Agregué una etiqueta nav y optimicé sus imágenes añadiéndoles figure.
+Separé el contenido con dos sectionn, agregando un h1 en cada uno, figure y rel a sus links.
+Para el footer añadí figure y a las etiquetas "a" les agregue "rel".

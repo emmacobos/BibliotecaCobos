@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dynamic library in which you find a list of ten benefits of reading and a TED Talk by Luke Bakic about POWER and the importance of READING.">
+    <meta name="keywords" content="Library, Luke Bakic, POWER, importance, READING, benefits, TED TALK">
     <link rel="icon" type="image/png" href="images\book.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +15,10 @@
     <title>Library</title>
   </head>
   <body>
-    <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 container-fluid position-fixed">
+      <figure>
         <a href="index.html"><img src="images\book.png" alt="Book"></a>
+      </figure>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,8 +45,8 @@
               <button class="btn btn-secondary border-0" type="submit">Search</button>
           </form>
         </div>
-      </nav>
-    </div>
+    </nav>
+    <header>
     <div class="container-fluid p-0 carousel-desktop d-none d-md-block">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -53,20 +56,20 @@
         </div>
         <div class="carousel-inner" id="fondo">
           <div class="carousel-item active">
-            <img src="images\taza-de-cafe-y-libro.jpg" class="d-block w-100" alt="...">
+            <figure><img src="images\taza-de-cafe-y-libro.jpg" class="d-block w-100" alt="..."></figure>
             <div class="carousel-caption fw-bold d-none d-md-block">
               <p>If there's a book that you want to read, but it hasn't been written yet, then you must write it.-Toni Morrison</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images\pexels-monstera-5331074.jpg" class="d-block w-100" alt="...">
+            <figure><img src="images\pexels-monstera-5331074.jpg" class="d-block w-100" alt="..."></figure>
             <div class="carousel-caption fw-bold d-none d-md-block">
               <h5>Science says reading a book makes you a better friend</h5>
               <p>Book worms versus Nerds: Exposure to fiction versus nonfiction, divergent associations with social ability, and the simulation of fictional social worlds. -Keith Oatley</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images\pexels-mart-production-8471848.jpg" class="d-block w-100" alt="...">
+            <figure><img src="images\pexels-mart-production-8471848.jpg" class="d-block w-100" alt="..."></figure>
             <div class="carousel-caption fw-bold d-none d-md-block m0-auto text-center">
               <p>Reading should not be presented to children as a chore or duty. It should be offered to them as a precious gift.— Kate DiCamillo.</p>
             </div>
@@ -91,19 +94,19 @@
         </div>
         <div class="carousel-inner" id="fondo">
           <div class="carousel-item active">
-            <img src="images\bookresponsive.jpg" alt="...">
+            <figure><img src="images\bookresponsive.jpg" alt="..."></figure>
             <div class="carousel-caption d-none d-md-block">
               <p>A reader lives a thousand lives before he dies . . . The man who never reads lives only one.– George R.R. Martin</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images\bookresponsive2.jpg" alt="...">
+            <figure><img src="images\bookresponsive2.jpg" alt="..."></figure>
             <div class="carousel-caption">
               <p>There is more treasure in books than in all the pirate’s loot on Treasure Island.– Walt Disney</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images\bookresponsive3.png" alt="...">
+            <figure><img src="images\bookresponsive3.png" alt="..."></figure>
             <div class="carousel-caption m0-auto text-center">
               <p>Books were my pass to personal freedom. I learned to read at age three, and there discovered was a whole world to conquer that went beyond our farm in Mississippi.– Oprah Winfrey</p>
             </div>
@@ -119,81 +122,87 @@
         </button>
       </div>
     </div>
-    <div class="container align-items-center flex-row container-video mt-5">
-      <div class="row">
-        <div class="col d-flex justify-content-center mb-4">
-          <p class="animate__animated animate__backInLeft anima title-container">The Power and Importance of ... READING!</p>
+    </header>
+    <section class="container">
+      <header class="align-items-center flex-row container-video mt-5">
+        <div class="row">
+          <div class="col d-flex justify-content-center mb-4">
+            <h1 class="animate__animated animate__backInLeft anima title-container">The Power and Importance of ... READING!</h1>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-7 col-sm-12 flex-column">
-          <iframe src="https://www.youtube.com/embed/rW2r5uStgG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+          <div class="col-md-7 col-sm-12 flex-column">
+            <figure><iframe src="https://www.youtube.com/embed/rW2r5uStgG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+          </div>
+          <div class="col-md-5 col-sm-12 d-flex align-items-center">
+            <h2 class="text-container-video">Why reading is so important in today's society. <br> A 9 year old's perspective  Luke is passionate about reading and believes the reduction of readings is causing a lot of society ills This talk was given at a TEDx event using the TED conference format but independently organized by a local community. </h2>
+          </div>
         </div>
-        <div class="col-md-5 col-sm-12 d-flex align-items-center">
-          <p class="text-container-video">Why reading is so important in today's society. <br> A 9 year old's perspective  Luke is passionate about reading and believes the reduction of readings is causing a lot of society ills This talk was given at a TEDx event using the TED conference format but independently organized by a local community. </p>
-        </div>
-      </div>
-      
-    </div>
-    <div class="container list-reading-books col-lg-7 col-12 d-flex flex-column justify-content-start mt-5">
-        <div>Importance of Reading Books</div>
-        <p>There are multiple benefits of reading books. From building your vocabulary to reducing stress and depression. The importance of reading is completely undeniable. The next time someone asks you: “Why is reading important?” you will have an educated and thorough answer to respond with. If you’re not the biggest fan of books, that’s ok! You’re not alone! But before you shut down books and reading all together, take the time to learn more about the importance of reading and all the incredible benefits that come with it. Here’re 10 benefits of reading to get you to start reading.</p>
-        <span class="img-readingbooks"><img class="img-fluid" src="images\readingbook.jpg" alt="Book"></span>
-        <div class="mt-5">1. Mental Stimulation</div>
-        <p>Studies have shown that staying mentally stimulated can slow the progress of (or possibly even prevent) Alzheimer’s and Dementia, since keeping your brain active and engaged prevents it from losing power.
-          Just like any other muscle in the body, the brain requires exercise to keep it strong and healthy, so the phrase “use it or lose it” is particularly apt when it comes to your mind. Doing puzzles and playing games such as chess have also been found to be helpful with cognitive stimulation.</p>
-        <div>2. Stress Reduction</div>
-        <p>No matter how much stress you have at work, in your personal relationships, or countless other issues faced in daily life, it all just slips away when you lose yourself in a great story. A well-written novel can transport you to other realms, while an engaging article will distract you and keep you in the present moment, letting tensions drain away and allowing you to relax.</p>
-        <div>3. Knowledge</div>
-        <span class="img-readingbooks"><img class="img-fluid" src="images\girlwithbook.jpg" alt="Girl with a book"></span>
-        <p class="mt-5">Everything you read fills your head with new bits of information, and you never know when it might come in handy. The more knowledge you have, the better-equipped you are to tackle any challenge you’ll ever face.
-          Additionally, here’s a bit of food for thought: should you ever find yourself in dire circumstances, remember that although you might lose everything else—your job, your possessions, your money, even your health—knowledge can never be taken from you.</p>
-        <div>4. Vocabulary Expansion</div>
-        <p>This goes with the above topic:
-          The more you read, the more words you gain exposure to, and they’ll inevitably make their way into your everyday vocabulary.
-          Being articulate and well-spoken is of great help in any profession, and knowing that you can speak to higher-ups with self-confidence can be an enormous boost to your self-esteem. It could even aid in your career, as those who are well-read, well-spoken, and knowledgeable on a variety of topics tend to get promotions more quickly (and more often) than those with smaller vocabularies and lack of awareness of literature, scientific breakthroughs, and global events.
-          Reading books is also vital for learning new languages, as non-native speakers gain exposure to words used in context, which will ameliorate their own speaking and writing fluency.</p>
-        <div>5. Memory Improvement</div>
-        <span class="img-readingbooks"><img class="img-fluid" src="images\twobooks.jpg" alt="Two books"></span>
-        <p class="mt-5">When you read a book, you have to remember an assortment of characters, their backgrounds, ambitions, history, and nuances, as well as the various arcs and sub-plots that weave their way through every story. That’s a fair bit to remember, but brains are marvellous things and can remember these things with relative ease.
-          Amazingly enough, every new memory you create forges new synapses (brain pathways) and strengthens existing ones, which assists in short-term memory recall as well as stabilizing moods.How cool is that?</p>
-        <div>6. Stronger Analytical Thinking Skills</div>
-        <p>Have you ever read an amazing mystery novel, and solved the mystery yourself before finishing the book? If so, you were able to put critical and analytical thinking to work by taking note of all the details provided and sorting them out to determine “whodunnit”.
-          That same ability to analyze details also comes in handy when it comes to critiquing the plot; determining whether it was a well-written piece, if the characters were properly developed, if the storyline ran smoothly, etc.
-          Should you ever have an opportunity to discuss the book with others, you’ll be able to state your opinions clearly, as you’ve taken the time to really consider all the aspects involved.</p>
-        <div>7. Improved Focus and Concentration</div>
-        <span class="img-readingbooks"><img class="img-fluid" src="images\goldenbook.jpg" alt="Book in golden hour"></span>
-        <p class="mt-5">In our internet-crazed world, attention is drawn in a million different directions at once as we multi-task through every day.
-          In a single 5-minute span, the average person will divide their time between working on a task, checking email, chatting with a couple of people (via gchat, skype, etc.), keeping an eye on twitter, monitoring their smartphone, and interacting with co-workers. This type of ADD-like behaviour causes stress levels to rise, and lowers our productivity.
-          When you read a book, all of your attention is focused on the story—the rest of the world just falls away, and you can immerse yourself in every fine detail you’re absorbing.
-          Try reading for 15-20 minutes before work (i.e. on your morning commute, if you take public transit), and you’ll be surprised at how much more focused you are once you get to the office.</p>
-        <div>8. Better Writing Skills</div>
-        <p>This goes hand-in-hand with the expansion of your vocabulary:
-          Exposure to published, well-written work has a noted effect on one’s own writing, as observing the cadence, fluidity, and writing styles of other authors will invariably influence your own work.
-          In the same way that musicians influence one another and painters use techniques established by previous masters, so do writers learn how to craft prose by reading the works of others.</p>
-        <div>9. Tranquility</div>
-        <span class="img-readingbooks"><img class="img-fluid" src="images\tranquility.jpg" alt="Tranquility"></span>
-        <p class="mt-5">In addition to the relaxation that accompanies reading a good book, it’s possible that the subject you read about can bring about immense inner peace and tranquility.
-          Reading spiritual texts can lower blood pressure and bring about an immense sense of calm, while reading self-help books has been shown to help people suffering from certain mood disorders and mild mental illnesses.</p>
-        <div>10. Free Entertainment</div>
-        <p>Though many of us like to buy books so we can annotate them and dog-ear pages for future reference, they can be quite pricey.
-          For low-budget entertainment, you can visit your local library and bask in the glory of the countless tomes available there for free. Libraries have books on every subject imaginable, and since they rotate their stock and constantly get new books, you’ll never run out of reading materials.
-          If you happen to live in an area that doesn’t have a local library, or if you’re mobility-impaired and can’t get to one easily, most libraries have their books available in PDF or ePub format so you can read them on your e-reader, iPad, or your computer screen.
-          There are also many sources online where you can download free e-books, so go hunting for something new to read!
-          There’s a reading genre for every literate person on the planet, and whether your tastes lie in classical literature, poetry, fashion magazines, biographies, religious texts, young adult books, self-help guides, street lit, or romance novels, there’s something out there to capture your curiosity and imagination.
-          Step away from your computer for a little while, crack open a book, and replenish your soul for a little while.</p>
-    </div>
-    <div class="container-fluid p-0 bg-light mt-5">
+      </header>
+      <article class="list-reading-books d-flex flex-column justify-content-start mt-5">
+          <h3>Importance of Reading Books</h3>
+          <p>There are multiple benefits of reading books. From building your vocabulary to reducing stress and depression. The importance of reading is completely undeniable. The next time someone asks you: “Why is reading important?” you will have an educated and thorough answer to respond with. If you’re not the biggest fan of books, that’s ok! You’re not alone! But before you shut down books and reading all together, take the time to learn more about the importance of reading and all the incredible benefits that come with it. Here’re 10 benefits of reading to get you to start reading.</p>
+          <figure class="img-readingbooks"><img class="img-fluid" src="images\readingbook.jpg" alt="Book"></figure>
+          <h3 class="mt-5">1. Mental Stimulation</h3>
+          <p>Studies have shown that staying mentally stimulated can slow the progress of (or possibly even prevent) Alzheimer’s and Dementia, since keeping your brain active and engaged prevents it from losing power.
+            Just like any other muscle in the body, the brain requires exercise to keep it strong and healthy, so the phrase “use it or lose it” is particularly apt when it comes to your mind. Doing puzzles and playing games such as chess have also been found to be helpful with cognitive stimulation.</p>
+          <h3>2. Stress Reduction</h3>
+          <p>No matter how much stress you have at work, in your personal relationships, or countless other issues faced in daily life, it all just slips away when you lose yourself in a great story. A well-written novel can transport you to other realms, while an engaging article will distract you and keep you in the present moment, letting tensions drain away and allowing you to relax.</p>
+          <h3>3. Knowledge</h3>
+          <figure class="img-readingbooks"><img class="img-fluid" src="images\girlwithbook.jpg" alt="Girl with a book"></figure>
+          <p class="mt-5">Everything you read fills your head with new bits of information, and you never know when it might come in handy. The more knowledge you have, the better-equipped you are to tackle any challenge you’ll ever face.
+            Additionally, here’s a bit of food for thought: should you ever find yourself in dire circumstances, remember that although you might lose everything else—your job, your possessions, your money, even your health—knowledge can never be taken from you.</p>
+          <h3>4. Vocabulary Expansion</h3>
+          <p>This goes with the above topic:
+            The more you read, the more words you gain exposure to, and they’ll inevitably make their way into your everyday vocabulary.
+            Being articulate and well-spoken is of great help in any profession, and knowing that you can speak to higher-ups with self-confidence can be an enormous boost to your self-esteem. It could even aid in your career, as those who are well-read, well-spoken, and knowledgeable on a variety of topics tend to get promotions more quickly (and more often) than those with smaller vocabularies and lack of awareness of literature, scientific breakthroughs, and global events.
+            Reading books is also vital for learning new languages, as non-native speakers gain exposure to words used in context, which will ameliorate their own speaking and writing fluency.</p>
+          <h3>5. Memory Improvement</h3>
+          <figure class="img-readingbooks"><img class="img-fluid" src="images\twobooks.jpg" alt="Two books"></figure>
+          <p class="mt-5">When you read a book, you have to remember an assortment of characters, their backgrounds, ambitions, history, and nuances, as well as the various arcs and sub-plots that weave their way through every story. That’s a fair bit to remember, but brains are marvellous things and can remember these things with relative ease.
+            Amazingly enough, every new memory you create forges new synapses (brain pathways) and strengthens existing ones, which assists in short-term memory recall as well as stabilizing moods.How cool is that?</p>
+          <h3>6. Stronger Analytical Thinking Skills</h3>
+          <p>Have you ever read an amazing mystery novel, and solved the mystery yourself before finishing the book? If so, you were able to put critical and analytical thinking to work by taking note of all the details provided and sorting them out to determine “whodunnit”.
+            That same ability to analyze details also comes in handy when it comes to critiquing the plot; determining whether it was a well-written piece, if the characters were properly developed, if the storyline ran smoothly, etc.
+            Should you ever have an opportunity to discuss the book with others, you’ll be able to state your opinions clearly, as you’ve taken the time to really consider all the aspects involved.</p>
+          <h3>7. Improved Focus and Concentration</h3>
+          <figure class="img-readingbooks"><img class="img-fluid" src="images\goldenbook.jpg" alt="Book in golden hour"></figure>
+          <p class="mt-5">In our internet-crazed world, attention is drawn in a million different directions at once as we multi-task through every day.
+            In a single 5-minute figure, the average person will divide their time between working on a task, checking email, chatting with a couple of people (via gchat, skype, etc.), keeping an eye on twitter, monitoring their smartphone, and interacting with co-workers. This type of ADD-like behaviour causes stress levels to rise, and lowers our productivity.
+            When you read a book, all of your attention is focused on the story—the rest of the world just falls away, and you can immerse yourself in every fine detail you’re absorbing.
+            Try reading for 15-20 minutes before work (i.e. on your morning commute, if you take public transit), and you’ll be surprised at how much more focused you are once you get to the office.</p>
+          <h3>8. Better Writing Skills</h3>
+          <p>This goes hand-in-hand with the expansion of your vocabulary:
+            Exposure to published, well-written work has a noted effect on one’s own writing, as observing the cadence, fluidity, and writing styles of other authors will invariably influence your own work.
+            In the same way that musicians influence one another and painters use techniques established by previous masters, so do writers learn how to craft prose by reading the works of others.</p>
+          <h3>9. Tranquility</h3>
+          <figure class="img-readingbooks"><img class="img-fluid" src="images\tranquility.jpg" alt="Tranquility"></figure>
+          <p class="mt-5">In addition to the relaxation that accompanies reading a good book, it’s possible that the subject you read about can bring about immense inner peace and tranquility.
+            Reading spiritual texts can lower blood pressure and bring about an immense sense of calm, while reading self-help books has been shown to help people suffering from certain mood disorders and mild mental illnesses.</p>
+          <h3>10. Free Entertainment</h3>
+          <p>Though many of us like to buy books so we can annotate them and dog-ear pages for future reference, they can be quite pricey.
+            For low-budget entertainment, you can visit your local library and bask in the glory of the countless tomes available there for free. Libraries have books on every subject imaginable, and since they rotate their stock and constantly get new books, you’ll never run out of reading materials.
+            If you happen to live in an area that doesn’t have a local library, or if you’re mobility-impaired and can’t get to one easily, most libraries have their books available in PDF or ePub format so you can read them on your e-reader, iPad, or your computer screen.
+            There are also many sources online where you can download free e-books, so go hunting for something new to read!
+            There’s a reading genre for every literate person on the planet, and whether your tastes lie in classical literature, poetry, fashion magazines, biographies, religious texts, young adult books, self-help guides, street lit, or romance novels, there’s something out there to capture your curiosity and imagination.
+            Step away from your computer for a little while, crack open a book, and replenish your soul for a little while.</p>
+      </article>
+    </section>
+    <footer class="container-fluid p-0 bg-light mt-5">
       <div class="footer d-flex justify-content-between align-items-center flex-wrap p-4">
-        <img src="./images/book.png" alt="Book">
+        <figure>
+          <img src="./images/book.png" alt="Book">
+        </figure>
         <p class="animate__animated animate__pulse">All rights reserved</p>
         <div class="rrss">
-          <div><a href="#"><img src="./images/facebook.png" alt="Facebook"></a></div>
-          <div><a href="#"><img src="./images/instagram.png" alt="Instagram"></a></div>
-          <div><a href="#"><img src="./images/twitter.png" alt="Twitter"></a></div>
+          <div class="rrss-fb"><a rel="noopener" href="#">
+            <!-- <img src="./images/facebook.png" alt="Facebook"> -->
+          </a></div>
+          <div><a rel="noopener" href="#"><img src="./images/instagram.png" alt="Instagram"></a></div>
+          <div><a rel="noopener" href="#"><img src="./images/twitter.png" alt="Twitter"></a></div>
         </div>
       </div>
-    </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

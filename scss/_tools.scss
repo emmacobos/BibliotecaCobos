@@ -1,0 +1,4 @@
+@mixin fonts ($font-medium: 1.25rem, $bold: bold){
+    font-size: $font-medium;
+    font-weight: $bold;
+}

@@ -9,6 +9,10 @@ body {
   background-color: #f3f3f3;
 }
 
+.navbar {
+  z-index: 100;
+}
+
 .navbar-light .navbar-toggler {
   border: none;
 }
@@ -22,25 +26,17 @@ body {
   width: 250px;
 }
 
-.form-control {
+.form-control, .form-control:focus {
   color: #21252994;
   background-color: rgba(255, 255, 255, 0.432);
   border-color: #21252994;
   outline: 0;
   box-shadow: 3px 5px 9px 0rem #48494a5c;
 }
-.form-control:focus {
-  color: #21252994;
-  background-color: rgba(255, 255, 255, 0.432);
-  border-color: #21252994;
-  outline: 0;
-  box-shadow: 3px 5px 9px 0rem #48494a5c;
-}
-
 .list-reading-books {
   align-items: center;
 }
-.list-reading-books div {
+.list-reading-books h3 {
   margin-bottom: 1.5rem;
   font-weight: bold;
   font-size: 1.25rem !important;
@@ -61,6 +57,9 @@ body {
   font-size: 14px;
 }
 
+#carouselExampleCaptions {
+  padding-top: 120px;
+}
 #carouselExampleCaptions .carousel-caption {
   text-shadow: -1px 0px 0 #d1d1d1;
   bottom: 0.25rem;
@@ -73,7 +72,7 @@ body {
   width: 100%;
 }
 #carouselExampleCaptions .carousel-item div {
-  font-weight: bolc;
+  font-weight: bold;
 }
 @media all and (max-width: 1500px) {
   #carouselExampleCaptions .carousel-item {
@@ -91,6 +90,9 @@ body {
   }
 }
 
+#carouselExampleCaptionsResponsive {
+  padding-top: 120px;
+}
 #carouselExampleCaptionsResponsive .carousel-caption {
   bottom: 2.25rem;
   text-shadow: -1px 0px 0 #d1d1d1;
@@ -135,6 +137,7 @@ body {
 }
 .container-video .text-container-video {
   font-size: 20px;
+  line-height: 2.5rem;
 }
 @media all and (max-width: 1200px) {
   .container-video .text-container-video {
@@ -152,11 +155,23 @@ body {
   }
 }
 
+.padding-section {
+  padding-top: 150px;
+}
+.padding-section .subtitle-genre {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.padding-section .title-list-genre {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .title__bestsellers {
   font-size: 30px;
   font-weight: 800;
   text-shadow: -1px 0px 0 #d1d1d1;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -166,6 +181,10 @@ body {
   }
 }
 
+.container__kids h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 .container__kids img {
   width: 500px;
   transition: all 0.5s ease-in-out;
@@ -181,6 +200,10 @@ body {
   .description {
     font-size: 14px;
   }
+}
+.description h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .container-cards .card {
@@ -203,9 +226,15 @@ body {
   padding: 10px 50px 10px 50px;
   background: linear-gradient(135deg, #4cbaffe6 0%, #d1e0eb);
 }
+.container-cards .card-body .card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
 .container-cards .subtitle-bestsellers {
+  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+  display: flex;
 }
 @media all and (max-width: 480px) {
   .container-cards .subtitle-bestsellers {
@@ -282,4 +311,9 @@ body {
   .footer .rrss {
     margin-top: 20px;
   }
+}
+.footer .rrss .rrss-fb {
+  background-image: url("../images/facebook.png");
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=estilos.css.map */
