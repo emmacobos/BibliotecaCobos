@@ -38,13 +38,16 @@ body{
         font-size: 1.25rem!important;
     }
     p{
-        line-height: 2;
+        line-height: 3;
         margin-bottom: 3rem;
+        margin-top: 20px;
     }
     .img-readingbooks{
-        width: 70%;
         display: flex;
         justify-content: center;
+    }
+    .twobooks{
+        max-height: 700px;
     }
 }
 .btn-secondary {
@@ -138,6 +141,30 @@ body{
         @include fonts(1rem);
     }
 }
+.header-bestsellers{
+    @media all and (max-width: $poin-lg){
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.img-bestsellers{
+    background-image: url(../images/bestsellers.svg);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+    animation: heartbeat 2s ease-in-out infinite both;
+    @media all and (max-width: $poin-lg){
+        background-image: url(../images/bestsellers-responsive.svg);
+        height: 400px;
+        width: 420px;
+    }
+    @media all and (max-width: $point-sm){
+        background-image: url(../images/bestsellers-mobile.svg);
+        height: 300px;
+        width: 320px;
+    }
+}
 .title__bestsellers{
     font-size: 30px;
     font-weight: 800;
@@ -175,6 +202,12 @@ body{
         background-color: transparent;
         height: 100%;
     }
+    .flecha{
+        background-image: url(../images/flecha.svg);
+        background-repeat: no-repeat;
+        height: 17px;
+        width: 15px;
+    }
     .card-body{
         display: flex;
         flex-direction: column;
@@ -193,6 +226,7 @@ body{
         .card-title{
             @include fonts(1rem);
         }
+        
     }
     .subtitle-bestsellers{
         @include fonts;
@@ -209,28 +243,14 @@ body{
         background-color: transparent;
         border: 1px solid #000000c2;
     }.button__submit{
-        color: $color;
         padding: $padding-button;
         border: 1px solid #bdbdbdc2;
-        animation: animaButton 4s linear infinite;
-        background-size: 1000% 1000%;
-        background: linear-gradient(135deg, #4cbaffe6 0%,#d1e0eb 100%);
-        &:hover{
-            background: linear-gradient(135deg, rgb(132, 215 ,107) 0%,rgb(92, 164, 227) 100%);
-            color: $color;
-            border: none;
-        }
     }
     .button__reset{
         background: #f7f4f4c2;
         color: #000000c2;
         padding: $padding-button;
         border: 1px solid #bdbdbdc2;
-        &:hover {
-            background: linear-gradient(135deg, #4cbaffe6 0%,#d1e0eb 100%);
-            color: $color;
-            border: none;
-        }
     }
     .form-check-input{
         &:focus {
@@ -242,6 +262,31 @@ body{
             border-color: #bdbdbdc2;
         }
     }
+}
+.rrss-download{
+    width: 400px;
+    .rrss-googleplay{
+        background-image: url(../images/google-play.svg);
+        @include rrss-dowload;
+        a{
+            width: 64px;
+            height: 64px;
+        }
+    }
+    .rrss-appstore{
+        background-image: url(../images/app-store.svg);
+        @include rrss-dowload;
+        a{
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+.img-banner{
+    background-image: url(../images/book.svg);
+    background-repeat: no-repeat;
+    width: 62px;
+    height: 62px;
 }
 .footer{
     @media all and (max-width: $point-sm){
@@ -267,9 +312,178 @@ body{
             margin-top: 20px;
         }
         .rrss-fb{
-            background-image: url('../images/facebook.png');
-            width: 100px;
-            height: 100px;
+            background-image: url(../images/facebook.svg);
+            @include rrss;
+        }
+        .rrss-ig{
+            background-image: url(../images/instagram.svg);
+            @include rrss;
+        }
+        .rrss-tw{
+            background-image: url(../images/twitter.svg);
+            @include rrss;
         }
     } 
+}
+.color-change-2x{
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	animation: color-change-2x 2s linear infinite alternate both;
+}
+ @-webkit-keyframes color-change-2x{
+    0%{
+        background: #13efff4d;
+    }
+    100%{
+        background: #c0ff2c4b;
+    }
+}
+@keyframes color-change-2x{
+    0%{
+        background: #eab91973;
+    }
+    100%{
+        background: #fffb2c60;
+    }
+}
+.color-change-2x-submit {
+	-webkit-animation: color-change-2x-submit 2s linear infinite alternate both;
+	animation: color-change-2x-submit 2s linear infinite alternate both;
+}
+@-webkit-keyframes color-change-2x-submit{
+    0% {
+        background: #4eca4a6c;
+    }
+    100% {
+        background: #3ea85967;
+    }
+}
+@keyframes color-change-2x-submit{
+    0%{
+        background: #19eaab5b;
+    }
+    100%{
+        background: #3292b850;
+}
+}
+.text-focus-in {
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in{
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+ @keyframes text-focus-in {
+    0%{
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes heartbeat{
+    from{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+@keyframes heartbeat{
+    from{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10%{
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17%{
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33%{
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+.slide-in-fwd-center {
+	animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-fwd-center {
+    0%{
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-fwd-center{
+    0%{
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
 }

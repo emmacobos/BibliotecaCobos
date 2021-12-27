@@ -1,11 +1,11 @@
 {
   "name": "sassbiblioteca",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dynamic library where you will find the benefits of reading. You can also find information about the New York Times Bestsellers, literary genres and their importance, and an exclusive section to introduce your children into the world of reading.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss/estilos.scss scss/estilos.css",
+    "build-css": "node-sass --include-path scss/estilos.scss css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {

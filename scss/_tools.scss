@@ -2,3 +2,13 @@
     font-size: $font-medium;
     font-weight: $bold;
 }
+@mixin rrss {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+}
+@mixin rrss-dowload{
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+}
