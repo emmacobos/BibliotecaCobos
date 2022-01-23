@@ -8,44 +8,62 @@ body{
     background-color: rgb(255, 255, 255);
 }
 p{  
-    line-height: 2rem;
+    line-height: $line-height;
     @media all and (max-width: 500px){
-        font-size: 12px;
+        font-size: $font-xxs;
     }
 }
 .navbar{
     z-index: 100;
-    box-shadow: 3px 1px 9px 0rem #48494a5c;
-}
-.navbar-light .navbar-toggler {
-    border: none; 
-}
-.navbar-expand-lg .navbar-nav .nav-link{
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-#navbarSupportedContent form{
-    width: 250px;
-}
-.form-control{
-    color: $color;
-    background-color: rgba(255, 255, 255, 0.432);
-    border-color: $color;
-    outline: 0;
-    box-shadow: 3px 5px 9px 0rem #48494a5c;
-    &:focus {
-        @extend .form-control;
+    box-shadow: 3px 1px 9px 0rem $box-shadow;
+    .navbar-toggler {
+        border: $borderN; 
+    }
+    #navbarSupportedContent{
+        form{
+            width: 250px;
+            .form-control{
+                color: $color;
+                background-color: rgba(255, 255, 255, 0.432);
+                border-color: $color;
+                outline: 0;
+                box-shadow: 3px 5px 9px 0rem $box-shadow;
+                &:focus {
+                    @extend .form-control;
+                }
+            }
+            .btn-secondary {
+                color: #ffffffbf;
+                background-color: $background-button;
+                font-size: $font-xs;
+                &:hover{
+                    color: $opacity;
+                    background-color: $pink;
+                }
+            }
+        }
+        .navbar-nav{
+            .nav-link{
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+            } 
+        }
+    }
+    .img-banner{
+        background-image: url(../images/book.svg);
+        background-repeat: no-repeat;
+        width: 62px;
+        height: 62px;
     }
 }
 .list-reading-books{
     align-items: center;
     h3{
         margin-bottom: 1.5rem;
-        font-weight: bold;
-        font-size: 1.25rem;
+        @include fonts;
         @media all and (max-width: 900px){
             font-size: 1rem;
-            line-height: 2rem;
+            line-height: $line-height;
         }
     }
     p{
@@ -54,75 +72,111 @@ p{
         margin-top: 20px;
     }
     .img-readingbooks{
-        display: flex;
-        justify-content: center;
+        @include center;
+        .slide-in-fwd-center {
+            animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @-webkit-keyframes slide-in-fwd-center {
+                0%{
+                    -webkit-transform: translateZ(-$point-xxl);
+                    transform: translateZ(-$point-xxl);
+                    opacity: 0;
+                }
+                100%{
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slide-in-fwd-center{
+                0%{
+                    -webkit-transform: translateZ(-$point-xxl);
+                    transform: translateZ(-$point-xxl);
+                    opacity: 0;
+                }
+                100%{
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    opacity: 1;
+                }
+            }
+        }
     }
     .twobooks{
         max-height: 700px;
     }
 }
-.btn-secondary {
-    color: #ffffffbf;
-    background-color: $background-button;
-    font-size: $font-small;
-    &:hover{
-        color: #fff;
-        background-color: #e69699;
-    }
-}
-#carouselExampleCaptions{
-    padding-top: 120px;
-    .carousel-caption{
-        text-align: start;
-        bottom: 0.25rem;
-        p, h5{
-            color: #edededd9;
-            font-weight: normal;
+.carousel-desktop{
+    #carouselExampleCaptions{
+        padding-top: 120px;
+        .carousel-caption{
+            text-align: start;
+            bottom: 0.25rem;
+            p, h5{
+                color: #edededd9;
+                font-weight: normal;
+            }
+        } 
+        .carousel-item{
+            max-height: map-get($height, l);
+            img{
+                display: block;
+                width: 100%;
+            }
+            div{
+                font-weight: bold;
+            }
+            @media all and (max-width: 1500px){
+                max-height: map-get($height, m);
+            }
+            @media all and (max-width: $point-xl){
+                max-height: map-get($height, s);
+            }
+            @media all and (max-width: 900px){
+                max-height: map-get($height, xs);
+            }
         }
-    } 
-    .carousel-item{
-        max-height: map-get($height, l);
+    }
+    .carousel-control-next, .carousel-control-prev{
+        top: 100px;  
+    }
+    .opacity-carousel{
+        background: $opacity;
         img{
-            display: block;
-            width: 100%;
-        }
-        div{
-            font-weight: bold;
-        }
-        @media all and (max-width: 1500px){
-            max-height: map-get($height, m);
-        }
-        @media all and (max-width: 1200px){
-            max-height: map-get($height, s);
-        }
-        @media all and (max-width: 900px){
-            max-height: map-get($height, xs);
+            opacity: .5;
         }
     }
 }
-.carousel-control-next, .carousel-control-prev {
-    top: 100px;  
-}
-#carouselExampleCaptionsResponsive{
-    padding-top: 120px;
-    .carousel-caption {
-        bottom: 2.25rem;
-        text-align: start;
-        p, h5{
-            color: #edededd9;
-            font-weight: normal;
+.carousel-responsive{
+    #carouselExampleCaptionsResponsive{
+        padding-top: 120px;
+        .carousel-caption {
+            bottom: 2.25rem;
+            text-align: start;
+            p, h5{
+                color: #edededd9;
+                font-weight: normal;
+            }
+        }
+        .carousel-item{
+            max-height: map-get($height, l);
+            img{
+                width: 100%;
+            }
+            @media all and (max-width: $point-xs){
+                max-height: map-get($height, m);
+            }
         }
     }
-    .carousel-item{
-        max-height: map-get($height, l);
+    .carousel-control-next, .carousel-control-prev{
+        top: 100px;  
+    }
+    .opacity-carousel{
+        background: $opacity;
         img{
-            width: 100%;
-        }
-        @media all and (max-width: $point-sm){
-            max-height: map-get($height, m);
+            opacity: .5;
         }
     }
-} 
+}
 .anima{
     animation-duration: 2s;
 }
@@ -130,49 +184,34 @@ p{
     iframe{
         height: map-get($height, l);
         width: -webkit-fill-available;
-        @media all and (max-width: $point-sm){
-            height: 300px;
+        @media all and (max-width: $point-xs){
+            height: map-get($height, s);
         }
     } 
     .title-container{
-        font-size: 30px;
+        font-size: $font-lg;
         font-weight: 800;
         text-shadow: $shadow-text;
-        @media all and (max-width: $point-sm){
-            font-size: 18px;
+        @media all and (max-width: $point-xs){
+            font-size: $font-small;
         }
     }
-    .title-container-video{
-        @media all and (max-width: 900px){
-            font-size: 24px;
-        }
-        @media all and (max-width: $point-sm){
-            font-size: 18px;
-        }
-    } 
     .text-container-video{
-        font-size: 20px;
+        font-size: $font-medium;
         line-height: 2.5rem;
-        @media all and (max-width: 1200px){
+        @media all and (max-width: $point-xl){
             font-size: 16px;
         }
-        @media all and (max-width:767px){
+        @media all and (max-width:$point-medium){
             margin-top: 30px;
         }
-        @media all and (max-width: $point-sm){
-            font-size: $font-small;
+        @media all and (max-width: $point-xs){
+            font-size: $font-xs;
         }
     }
 }
 .padding-section{
     padding-top: 180px;
-}
-.header-bestsellers{
-    @media all and (max-width: $poin-lg){
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
 }
 .row-header-bestsellers{
     img{
@@ -182,78 +221,41 @@ p{
     h3{
         font-size: 1.5rem;
         margin-bottom: 20px;
-        @media all and (max-width: $poin-lg){
+        @media all and (max-width: $point-medium){
             font-size: 1rem;
         }
-        @media all and(max-width: $point-sm){
-            font-size: $font-small;
+        @media all and(max-width: $point-xs){
+            font-size: $font-xs;
         }
     }
     p{
-        @media all and (max-width: $poin-lg){
-            font-size: 13px;
+        @media all and (max-width: $point-medium){
+            font-size: $font-xxs;
         }
-        @media all and(max-width: $point-sm){
-            font-size: 12px;
-        }
-    }
-}
-.img-bestsellers{
-    background-image: url(../images/bestsellers.svg);
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
-    @media all and (max-width: $poin-lg){
-        background-image: url(../images/bestsellers-responsive.svg);
-        height: 400px;
-        width: 420px;
-    }
-    @media all and (max-width: $point-sm){
-        background-image: url(../images/bestsellers-mobile.svg);
-        height: 300px;
-        width: 320px;
-    }
-}
-.title__bestsellers{
-    font-size: 30px;
-    font-weight: 800;
-    text-shadow: $shadow-text;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    line-height: 2rem;
-    @media all and (max-width: $point-sm){
-        font-size: 18px;
-    }
-}
-// .genre-section li{
-//     font-size: 12px;
-//     font-weight: bold;
-//     line-height: 2rem;
-// }
-.container__kids{
-    h3{
-        @include fonts;
-    }
-    img{
-        width: 500px;
-        transition: all .5s ease-in-out;
-        &:hover {
-            transform: scale(1.1);
-        } 
     }
 }
 .description{
     margin-top: 3rem;
-    @media all and (max-width: $point-sm){
-        font-size: $font-small;
+    @media all and (max-width: $point-xs){
+        font-size: $font-xs;
     }
     h3{
         @include fonts;
-        line-height: 2rem;
+        line-height: $line-height;
     }
     li{
-        line-height: 2rem;
+        line-height: $line-height;
+    }
+}
+.title__bestsellers{
+    font-size: $font-lg;
+    font-weight: 800;
+    text-shadow: $shadow-text;
+    margin-bottom: 2rem;
+    @include center;
+    line-height: $line-height;
+    @media all and (max-width: $point-xs){
+        font-size: $font-small;
     }
 }
 .container-cards{
@@ -262,7 +264,7 @@ p{
         height: 100%;
         .container-img{
             img{
-                height: 300px;
+                height: map-get($height, s);
                 object-fit: cover;
             }
         }
@@ -280,26 +282,39 @@ p{
         align-items: flex-start;
         height: 100%;
         .button__card{
-            font-size: $font-small;
+            font-size: $font-xs;
             transition: width 0.5s 0s ease-in, all 0.5s 0s ease-out;
             color: $color;
             &:hover{
-                color: #e69699;
+                color: $pink;
             }
         }
         .card-title{
             @include fonts(1rem);
         }
         .text-muted {
-            color: #e69699!important;
+            color: $pink!important;
         }
     }
     .subtitle-bestsellers{
         @include fonts;
         margin-bottom: 1.5rem;
         display: flex;
-        @media all and (max-width: $point-sm){
-            font-size: $font-small;
+        @media all and (max-width: $point-xs){
+            font-size: $font-xs;
+        }
+    }
+    .opacity{
+        .container-img{
+            background: $opacity;
+            img {
+                opacity: 1;
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+                &:hover{
+                    opacity: .5;
+                }
+            }
         }
     }
 }
@@ -311,23 +326,23 @@ p{
     }
     .button__submit{
         padding: $padding-button;
-        color: #fff;
-        background-color: #e69699;
-        border: none;
+        color: $opacity;
+        background-color: $pink;
+        border: $borderN;
     }
     .button__reset{
-        color: #fff;
-        background-color: #e69699;
+        color: $opacity;
+        background-color: $pink;
         padding: $padding-button;
-        border: none;
+        border: $borderN;
     }
     .form-check-input{
         &:focus {
-            border: none;
+            border: $borderN;
             box-shadow: none;
         }
         &:checked{
-            background-color:#e69699;
+            background-color:$pink;
             border-color: $grey;
         }
     }
@@ -351,15 +366,9 @@ p{
         }
     }
 }
-.img-banner{
-    background-image: url(../images/book.svg);
-    background-repeat: no-repeat;
-    width: 62px;
-    height: 62px;
-}
 .footer{
-    box-shadow: 3px 1px 9px 0rem #48494a5c;
-    @media all and (max-width: $point-sm){
+    box-shadow: 3px 1px 9px 0rem $box-shadow;
+    @media all and (max-width: $point-xs){
         justify-content: space-around!important;
     }
     p{
@@ -378,7 +387,7 @@ p{
                 transform: translateY(-10px);
             }
         }
-        @media all and (max-width: $point-sm){
+        @media all and (max-width: $point-xs){
             margin-top: 20px;
         }
         .rrss-fb{
@@ -393,54 +402,14 @@ p{
             background-image: url(../images/twitter.svg);
             @include rrss;
         }
-    } 
+    }
+    .img-banner{
+        background-image: url(../images/book.svg);
+        background-repeat: no-repeat;
+        width: 62px;
+        height: 62px;
+    }
 }
-// .color-change-2x{
-// 	-webkit-animation: color-change-2x 2s linear infinite alternate both;
-// 	animation: color-change-2x 2s linear infinite alternate both;
-// }
-// @-webkit-keyframes color-change-2x{
-//     0%{
-//         background: #e69699;
-//     }
-//     50%{
-//         background: #9799e9;
-//     }
-//     100%{
-//         background: #e708a44b;
-//     }
-// }
-// @keyframes color-change-2x{
-//     0%{
-//         background: #e69699;
-//     }
-//     50%{
-//         background: #9799e9;
-//     }
-//     100%{
-//         background: #e708a44b;
-//     }
-// }
-// .color-change-2x-submit {
-// 	-webkit-animation: color-change-2x-submit 2s linear infinite alternate both;
-// 	animation: color-change-2x-submit 2s linear infinite alternate both;
-// }
-// @-webkit-keyframes color-change-2x-submit{
-//     0%{
-//         background: #e69699;
-//     }
-//     100%{
-//         background: #e708a44b;
-//     }
-// }
-// @keyframes color-change-2x-submit{
-//     0%{
-//         background: #e69699;
-//     }
-//     100%{
-//         background: #e708a44b;
-//     }
-// }
 .text-focus-in{
 	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
@@ -468,132 +437,18 @@ p{
         opacity: 1;
     }
 }
-@-webkit-keyframes heartbeat{
-    from{
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: center center;
-        transform-origin: center center;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    10% {
-        -webkit-transform: scale(0.91);
-        transform: scale(0.91);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    17% {
-        -webkit-transform: scale(0.98);
-        transform: scale(0.98);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    33% {
-        -webkit-transform: scale(0.87);
-        transform: scale(0.87);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    45% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-}
-@keyframes heartbeat{
-    from{
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: center center;
-        transform-origin: center center;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    10%{
-        -webkit-transform: scale(0.91);
-        transform: scale(0.91);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    17%{
-        -webkit-transform: scale(0.98);
-        transform: scale(0.98);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    33%{
-        -webkit-transform: scale(0.87);
-        transform: scale(0.87);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    45%{
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-}
-.slide-in-fwd-center {
-	animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-@-webkit-keyframes slide-in-fwd-center {
-    0%{
-        -webkit-transform: translateZ(-1400px);
-        transform: translateZ(-1400px);
-        opacity: 0;
-    }
-    100%{
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-@keyframes slide-in-fwd-center{
-    0%{
-        -webkit-transform: translateZ(-1400px);
-        transform: translateZ(-1400px);
-        opacity: 0;
-    }
-    100%{
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-.opacity-carousel{
-    background: #181d1c;
-    img{
-        opacity: .5;
-    };
-}
-.opacity{
-    .container-img{
-        background: #181d1c;
-    img {
-        opacity: 1;
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-    }
-    &:hover img {
-        opacity: .5;
-    }
-    }
-}
 .genres{
     height: 350px;
     box-shadow: rgb(0 0 0 / 50%) 0px 2px 3px;
-    margin: 20px 0px 20px 0px;
+    margin: 20px;
     transition: all 0.8s ease-in-out;
-    @media all and (max-width: 1400px){
-        height: 400px;
+    @media all and (max-width: $point-xxl){
+        height: map-get($height, m);
     }
-    @media all and (max-width: 1200px){
-        height: 500px;
+    @media all and (max-width: $point-xl){
+        height: map-get($height, l);
     }
-    @media all and (max-width: 992px){
+    @media all and (max-width: $point-lg){
         height: auto;
     }
     &:hover{
@@ -604,47 +459,43 @@ p{
         color: rgb(226, 150, 128);
     }
     .card-body{
-        display: flex;
+        @include center;
         align-items: center;
-        justify-content: center;
     }
     .btn-genre{
         padding: 20px;
-        color: #21252994;
+        color: $color;
         text-decoration: none;
         &:hover{
-            color: #e69699;
+            color: $pink;
         }
     }
 }
 .bigcard-container{
     background-color: rgb(248, 212, 199);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 40px 100px;
     box-shadow: rgb(0 0 0 / 50%) 0px 1px 5px;
     border-radius: 5px;
     width: 900px;
-    margin: 100px auto 100px auto;
-    @media all and(max-width: 998px){
+    margin: 100px auto;
+    @media all and(max-width: $point-lg){
         padding-left: 60px;
         padding-right: 60px;
         width: auto;
-        margin: 50px auto 50px auto;
+        margin: 50px auto;
     }
-    @media all and (max-width:576px){
+    @media all and (max-width:$point-sm){
         padding-left: 40px;
         padding-right: 40px;
     }
-    @media all and (max-width: $point-sm){
-        padding: 10px 20px 10px 20px;
+    @media all and (max-width: $point-xs){
+        padding: 10px 20px;
     }
     .bigcard-container-div1{
         background-color: rgba(255, 255, 255, 0.85);
         border-radius: 5px;
         padding: 40px;
-        @media all and (max-width:576px){
+        @media all and (max-width:$point-sm){
             padding: 20px;
         }
         p{
@@ -655,62 +506,67 @@ p{
             button{
                 width: 120px;
                 height: 36px;
-                background-color: #e69699;
-                color: white;
+                background-color: $pink;
+                color: $white;
                 margin-top: 30px;
-                justify-content: center;
-                border: none;
+                @include center;
+                border: $borderN;
                 box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
                 align-items: center;
                 transition: all 0.5s ease-in-out;
                 &:hover{
                     transform: scale(1.2);
                 }
-                @media all and (max-width:576px){
+                @media all and (max-width:$point-sm){
                     width: 80px;
                     height: 30px;
-                    font-size: 12px;
+                    font-size: $font-xxs;
                 }
             }
             p{
                 font-family: 'Sedgwick Ave', cursive;
-                color: #e69699;
+                color: $pink;
                 letter-spacing: 2px;
             }
         }
     }
 }
 .thebest-container{
-    display: flex;
-    justify-content: center;
+    @include center;
     .opacity{
         .container-img{
-            border-radius: 5%;            
+            border-radius: 5%;  
+            background: $opacity;          
         }
         a{
             text-decoration: none;
             .card{
                 background-color: transparent;
-                border: none;
+                border: $borderN;
                 img{
-                    height: 400px;
+                    height: map-get($height, m);
                     object-fit: cover;
                     border-radius: 5%;
-                    @media all and (max-width: 1200px){
-                        height: 300px;
+                    opacity: 1;
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                    @media all and (max-width: $point-xl){
+                        height: map-get($height, s);
                     }
-                    @media all and (max-width: 998px){
-                        height: 200px;
+                    @media all and (max-width: $point-lg){
+                        height: map-get($height, xs);
                     }
-                    @media all and (max-width: 767px){
+                    @media all and (max-width: $point-medium){
                         height: auto;
+                    }
+                    &:hover{
+                        opacity: .5;
                     }
                 }
                 .card-body{
-                    display: flex;
-                    justify-content: center;
+                    @include center;
                     .card-title{
-                    font-size: 20px;
+                    font-size: $font-medium;
                     }
                 }
             }
@@ -724,7 +580,7 @@ p{
     background-position: center;
     display: flex;
     align-items: flex-end;
-    @media all and (max-width: 1200px){
+    @media all and (max-width: $point-xl){
         background-image: linear-gradient(to bottom, #33ccff00 64%, #000000 104%), url(../images/kidreading1.jpg);
         height: 60vh;
     }
@@ -734,17 +590,17 @@ p{
         font-size: 70px;
         letter-spacing: 10px;
         margin-left: 100px;
-        @media all and (max-width: 1200px){
+        @media all and (max-width: $point-xl){
             font-size: 50px;
             letter-spacing: 6px;
             margin-left: 70px;
         }
-        @media all and (max-width: 998px){
-            font-size: 30px;
+        @media all and (max-width: $point-lg){
+            font-size: $font-lg;
             margin-left: 50px;
         }
-        @media all and (max-width:576px){
-            font-size: 20px;
+        @media all and (max-width:$point-sm){
+            font-size: $font-medium;
             margin-left: 20px;
             margin-bottom: 20px;
         }
@@ -759,17 +615,16 @@ p{
         }
     }
     .gif-kids{
-        display: flex;
-        justify-content: center;
+        @include center;
         img{
             max-width: 750px;
-            @media all and (max-width: 1400px){
+            @media all and (max-width: $point-xxl){
                 width: 600px;
             }
-            @media all and (max-width: 1200px){
+            @media all and (max-width: $point-xl){
                 width: 500px;
             }
-            @media all and (max-width: 576px){
+            @media all and (max-width: $point-sm){
                 width: 300px;
             }
         }
