@@ -1,285 +1,321 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="In this library you will find how the rankings of the best sellers work, especially the New York Times. You can also find the updated list of the best sellers so far and a direct link to buy them.">
-    <meta name="keywords" content="NYT, New York Times, Best Sellers, raking, buy, WISH YOU WERE HERE, THE 1619 PROJECT, IT ENDS WITH US">
-    <link rel="icon" type="image/png" href="../images/book.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Library Best Sellers</title>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="In this library you will find how the rankings of the best sellers work, especially the New York Times. You can also find the updated list of the best sellers so far and a direct link to buy them.">
+        <meta name="keywords" content="NYT, New York Times, Best Sellers, raking, buy, WISH YOU WERE HERE, THE 1619 PROJECT, IT ENDS WITH US">
+        <link rel="icon" type="image/png" href="../images/book.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../css/estilos.css">
+        <title>Library Best Sellers</title>
+    </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 container-fluid position-fixed">
-            <figure class="img-banner">
-            </figure>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="img-banner">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="../section/bestsellers.html">Bestsellers</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../section/genre.html">Genre</a>
-                   </li>
-                   <li class="nav-item">
-                      <a class="nav-link" href="../section/kids.html">Kids</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../section/contact.html">Contact</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../section/bestsellers.html">Bestsellers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../section/genre.html">Genre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../section/kids.html">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../section/contact.html">Contact</a>
+                    </li>
                 </ul>
                 <form class="d-flex justify-content-end">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-secondary border-0" type="submit">Search</button>
                 </form>
-              </div>
-          </nav>
+            </div>
+        </nav>
         <section class="container padding-section mb-5 d-flex flex-column align-items-center">
             <header>
                 <h1 class="title__bestsellers anima animate__animated animate__backInLeft">How bestseller lists actually work</h1>
-                <figure class="img-bestsellers">
-                    <!-- <img class="mb-3 mt-3 img-fluid" src="../images/bestsellers.jpg" alt="Best Sellers"> -->
-                </figure>
+                <div class="row row-header-bestsellers">          
+					<div class="col d-flex flex-column justify-content-center">
+						<h3 class="wow animate__animated animate__lightSpeedInLeft anima"><strong>The New York Times bestseller list</strong></h3>
+                        <p>This is considered the most important bestseller list, and the only one that people tend to talk about by name. If you make this list, you put "New York Times bestseller" on the top of your books. Every other list generally gets a "National bestseller" headline.</p>
+					</div>
+					<div class="col col-12 col-lg-4 col-sm-12 d-flex justify-content-center">
+                        <img src="../images/gifbestsellers.gif" alt="Gif Bestsellers">
+					</div>
+				</div>
             </header>
             <div class="description">
-                <h3><strong>The New York Times bestseller list</strong></h3>
-                <p>This is considered the most important bestseller list, and the only one that people tend to talk about by name. If you make this list, you put "New York Times bestseller" on the top of your books. Every other list generally gets a "National bestseller" headline.</p>
                 <div class="mb-5 mt-5">
-                    <h3><strong>Methodology</strong></h3>
-                    <p>The weekly bestsellers are calculated from Monday to Monday. Here is how they describe their methodology on their website -- "Rankings reflect sales reh3orted by vendors offering a wide range of general interest titles. The sales venues for print books include independent book retailers; national, regional and local chains; online and multimedia entertainment retailers; supermarkets, university, gift and discount department stores; and newsstands. Ebook rankings reflect sales from leading online vendors of ebooks in a variety of popular ereader formats. Ebook sales are presently included for all adult categories (fiction, non-fiction and advice) except for graphic novels, and all children's categories with the exception of picture books. Titles are included regardless of whether they are published in both print and electronic formats or just one format. Ebooks available exclusively from a single vendor will be tracked at a future date."
-                    </p><p>
-                    As I mentioned before, the New York Times list is a survey list, not a tabulation of total sales. This means that they poll a curated selection of booksellers to estimate sales. They literally decide which bookstores and retail outlets are important and then only count those sales, ignoring all other sales. They also heavily weight independent bookstore sales. This is because they think that the type of people who shop at indie bookstores are more serious readers and thus their reading decisions deserve more attention. I'm serious, they have said this in public.
-                    </p><p>
-                    They also focus on individual sales, and try to not include bulk sales in their calculations. They do this to prevent people from buying their way onto the list. If you sell 1,000 copies to a company as part of a speaking engagement deal, this is a great way to move copies and make money, but it’s not very effective for hitting the list, because they won't count it.
-                    </p><p>
-                    And notice how they say that won't count ebook sales from only one source? This is a direct shot at Amazon. They don't like Amazon, and they don't think ebooks are real books. They don't want to see their ebook list dominated by Amazon's Kindle list.
-                    </p><p>
-                    Make no mistake about it -- this is all just as elitist and snobbish as it sounds. They only recently started including ebooks in their lists, and they still heavily discount ebooks that have no print edition. Yes they track them, but they count their sales as less.
-                    </p><p>
-                    The reality is that even though the New York Times list is seen as the most prestigious, in many ways it's the least connected to actual book selling reality.</p>
+                    <h3 class="wow animate__animated animate__lightSpeedInLeft anima"><strong>Methodology</strong></h3>
+                    <p>The weekly bestsellers are calculated from Monday to Monday. Here is how they describe their methodology on their website -- "Rankings reflect sales reh3orted by vendors offering a wide range of general interest titles. The sales venues for print books include independent book retailers; national, regional and local chains; online and multimedia entertainment retailers; supermarkets, university, gift and discount department stores; and newsstands. Ebook rankings reflect sales from leading online vendors of ebooks in a variety of popular ereader formats. Ebook sales are presently included for all adult categories (fiction, non-fiction and advice) except for graphic novels, and all children's categories with the exception of picture books. Titles are included regardless of whether they are published in both print and electronic formats or just one format. Ebooks available exclusively from a single vendor will be tracked at a future date."</p>
+                    <p>As I mentioned before, the New York Times list is a survey list, not a tabulation of total sales. This means that they poll a curated selection of booksellers to estimate sales. They literally decide which bookstores and retail outlets are important and then only count those sales, ignoring all other sales. They also heavily weight independent bookstore sales. This is because they think that the type of people who shop at indie bookstores are more serious readers and thus their reading decisions deserve more attention. I'm serious, they have said this in public.</p>
+                    <p>They also focus on individual sales, and try to not include bulk sales in their calculations. They do this to prevent people from buying their way onto the list. If you sell 1,000 copies to a company as part of a speaking engagement deal, this is a great way to move copies and make money, but it’s not very effective for hitting the list, because they won't count it.</p>
+                    <p>And notice how they say that won't count ebook sales from only one source? This is a direct shot at Amazon. They don't like Amazon, and they don't think ebooks are real books. They don't want to see their ebook list dominated by Amazon's Kindle list.</p>
+                    <p>Make no mistake about it -- this is all just as elitist and snobbish as it sounds. They only recently started including ebooks in their lists, and they still heavily discount ebooks that have no print edition. Yes they track them, but they count their sales as less.</p>
+                    <p> The reality is that even though the New York Times list is seen as the most prestigious, in many ways it's the least connected to actual book selling reality.</p>
                 </div>
                 <div class="mb-5">
-                <h3><strong>Tips and tricks</strong></h3>
-                <ul>
-                    <li class="mb-1">For the most part, they do not count self-published books. You must work through a traditional publishing company to even have a shot at this list.</li>
-                    <li class="mb-1">The category and window of your release significantly impacts the number of copies required to hit the New York Times bestseller list, but 5,000 copies during any one-week period is the minimum. I would recommend 10,000 to be sure.</li>
-                    <li>Have your publisher pick a down time in publishing. The fewer big books you have to compete with, the better.</li>
-                </ul>
+                    <h3 class="wow animate__animated animate__lightSpeedInLeft anima"><strong>Tips and tricks</strong></h3>
+                    <ul>
+                        <li class="mb-1">For the most part, they do not count self-published books. You must work through a traditional publishing company to even have a shot at this list.</li>
+                        <li class="mb-1">The category and window of your release significantly impacts the number of copies required to hit the New York Times bestseller list, but 5,000 copies during any one-week period is the minimum. I would recommend 10,000 to be sure.</li>
+                        <li>Have your publisher pick a down time in publishing. The fewer big books you have to compete with, the better.</li>
+                    </ul>
                 </div>
             </div>
         </section>
         <article class="container container-cards">
-            <h1 class="title__bestsellers anima animate__animated animate__backInLeft">Details of The New York Times Best Sellers</h1>
+            <h1 class="title__bestsellers wow anima animate__animated animate__backInLeft">Details of The New York Times Best Sellers</h1>
             <div class="d-flex align-items-center">
                 <p class="subtitle-bestsellers">Combined Print & E-Book Fiction</p> 
-                <figure class="flecha"></figure>
+                <figure class="flecha wow animate__rotateIn wow anima animate__animated"></figure>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 row-cols-md-3 g-4 mb-5">
-                <div class="col">
-                <div class="card">
-                    <figure class="container-img"><img src="../images/imagesbestsellers\9781984818416.jpg" class="card-img-top" alt="WISH YOU WERE HERE"></figure>
-                    <div class="card-body">
-                    <h3 class="card-title fw-bold">WISH YOU WERE HERE</h3>
-                    <p class="card-text"><small class="text-muted">Jodi Picoult</small></p>
-                    <p class="card-text">Diana O’Toole re-evaluates her seemingly perfect life when a pandemic disrupts her vacation in the Galápagos Islands.</p>
-                    <a rel="noreferrer" href="https://www.amazon.com/dp/1984818414?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
-                </div>
-                </div>
-                <div class="col">
+                <div class="col opacity" id="wishyouwerehere">
                     <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9780316332910.jpg" class="card-img-top" alt="LEVIATHAN FALLS"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">LEVIATHAN FALLS</h3>
-                        <p class="card-text"><small class="text-muted">James S.A. Corey</small></p>
-                        <p class="card-text">The ninth book in the Expanse series. A group of unlikely allies might find a way to bring peace to a vast galactic civilization.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/0316332917?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9781101885680.jpg" class="card-img-top" alt="GO TELL THE BEES THAT I AM GONE"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">GO TELL THE BEES THAT I AM GONE</h3>
-                        <p class="card-text"><small class="text-muted">Diana Gabaldon</small></p>
-                        <p class="card-text">The ninth book in the Outlander series. As the Revolutionary War moves closer to Fraser’s Ridge, Claire and Jamie reunite with their daughter and her family.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/1101885688?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9781984818416.jpg" class="card-img-top" alt="WISH YOU WERE HERE">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">WISH YOU WERE HERE</h3>
+                            <p class="card-text"><small class="text-muted">Jodi Picoult</small></p>
+                            <p class="card-text">Diana O’Toole re-evaluates her seemingly perfect life when a pandemic disrupts her vacation in the Galápagos Islands.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/1984818414?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col opacity">
                     <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9780063112193.jpg" class="card-img-top" alt="AUTOPSY"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">AUTOPSY</h3>
-                        <p class="card-text"><small class="text-muted">Patricia Cornwell</small></p>
-                        <p class="card-text">The 25th book in the Kay Scarpetta series. Scarpetta investigates crime scenes in Virginia and outer space.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/0063112191?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9780316332910.jpg" class="card-img-top" alt="LEVIATHAN FALLS">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">LEVIATHAN FALLS</h3>
+                            <p class="card-text"><small class="text-muted">James S.A. Corey</small></p>
+                            <p class="card-text">The ninth book in the Expanse series. A group of unlikely allies might find a way to bring peace to a vast galactic civilization.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/0316332917?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col opacity">
                     <div class="card">
-                    <figure><img src="..\images\imagesbestsellers\9780385546027.jpg" class="card-img-top" alt="THE JUDGE'S LIST"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">THE JUDGE'S LIST</h3>
-                        <p class="card-text"><small class="text-muted">John Grisham</small></p>
-                        <p class="card-text">The second book in the Whistler series. Investigator Lacy Stoltz goes after a serial killer and closes in on a sitting judge.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/0385546025?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9781101885680.jpg" class="card-img-top" alt="GO TELL THE BEES THAT I AM GONE">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">GO TELL THE BEES THAT I AM GONE</h3>
+                            <p class="card-text"><small class="text-muted">Diana Gabaldon</small></p>
+                            <p class="card-text">The ninth book in the Outlander series. As the Revolutionary War moves closer to Fraser’s Ridge, Claire and Jamie reunite with their daughter and her family.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/1101885688?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
+                </div>
+                <div class="col opacity">
+                    <div class="card">
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9780063112193.jpg" class="card-img-top" alt="AUTOPSY">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">AUTOPSY</h3>
+                            <p class="card-text"><small class="text-muted">Patricia Cornwell</small></p>
+                            <p class="card-text">The 25th book in the Kay Scarpetta series. Scarpetta investigates crime scenes in Virginia and outer space.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/0063112191?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col opacity">
+                    <div class="card">
+                        <div class="container-img">
+                            <img src="..\images\imagesbestsellers\9780385546027.jpg" class="card-img-top" alt="THE JUDGE'S LIST">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">THE JUDGE'S LIST</h3>
+                            <p class="card-text"><small class="text-muted">John Grisham</small></p>
+                            <p class="card-text">The second book in the Whistler series. Investigator Lacy Stoltz goes after a serial killer and closes in on a sitting judge.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/0385546025?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="d-flex align-items-center">
                 <p class="subtitle-bestsellers">Combined Print & E-Book Nonfiction</p> 
-                <figure class="flecha"></figure>
+                <figure class="flecha wow animate__rotateIn wow anima animate__animated"></figure>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 row-cols-md-3 g-4 mb-5">
-                <div class="col">
-                <div class="card">
-                    <figure><img src="..\images\imagesbestsellers\9780593230572.jpg" class="card-img-top" alt="THE 1619 PROJECT"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">THE 1619 PROJECT</h3>
-                        <p class="card-text"><small class="text-muted">Nikole Hannah-Jones</small></p>
-                        <p class="card-text">Viewing America’s entanglement with slavery and its legacy, in essays adapted and expanded from The New York Times Magazine.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/0593230574?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
-                </div>
-                </div>
-                <div class="col">
+                <div class="col opacity">
                     <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9780063076099.jpg" class="card-img-top" alt="THE STORYTELLER"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">THE STORYTELLER</h3>
-                        <p class="card-text"><small class="text-muted">Dave Grohl</small></p>
-                        <p class="card-text">A memoir by the musician known for his work with Foo Fighters and Nirvana.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/0063076098?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9780063046641.jpg" class="card-img-top" alt="ALL AMERICAN CHRISTMAS"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">ALL AMERICAN CHRISTMAS</h3>
-                        <p class="card-text"><small class="text-muted">Rachel Campos-Duffy and Sean Duffy</small></p>
-                        <p class="card-text">A collection of holiday memories from members of the staff of Fox News.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/0063046644?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
+                        <div class="container-img">
+                            <img src="..\images\imagesbestsellers\9780593230572.jpg" class="card-img-top" alt="THE 1619 PROJECT">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">THE 1619 PROJECT</h3>
+                            <p class="card-text"><small class="text-muted">Nikole Hannah-Jones</small></p>
+                            <p class="card-text">Viewing America’s entanglement with slavery and its legacy, in essays adapted and expanded from The New York Times Magazine.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/0593230574?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col opacity">
                     <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9780593159118.jpg" class="card-img-top" alt="ALL ABOUT ME!"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">ALL ABOUT ME!</h3>
-                        <p class="card-text"><small class="text-muted">Mel Brooks</small></p>
-                        <p class="card-text">The EGOT and Kennedy Center honoree shares stories about making comedy for the stage, film and television</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/059315911X?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9780063076099.jpg" class="card-img-top" alt="THE STORYTELLER">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">THE STORYTELLER</h3>
+                            <p class="card-text"><small class="text-muted">Dave Grohl</small></p>
+                            <p class="card-text">A memoir by the musician known for his work with Foo Fighters and Nirvana.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/0063076098?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col opacity">
                     <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9781984877925.jpg" class="card-img-top" alt="WILL"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">WILL</h3>
-                        <p class="card-text"><small class="text-muted">Will Smith with Mark Manson</small></p>
-                        <p class="card-text">The actor, producer and musician tells his life story and lessons he learned along the way.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/1984877925?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9780063046641.jpg" class="card-img-top" alt="ALL AMERICAN CHRISTMAS">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">ALL AMERICAN CHRISTMAS</h3>
+                            <p class="card-text"><small class="text-muted">Rachel Campos-Duffy and Sean Duffy</small></p>
+                            <p class="card-text">A collection of holiday memories from members of the staff of Fox News.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/0063046644?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
+                </div>
+                <div class="col opacity">
+                    <div class="card">
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9780593159118.jpg" class="card-img-top" alt="ALL ABOUT ME!">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">ALL ABOUT ME!</h3>
+                            <p class="card-text"><small class="text-muted">Mel Brooks</small></p>
+                            <p class="card-text">The EGOT and Kennedy Center honoree shares stories about making comedy for the stage, film and television</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/059315911X?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col opacity">
+                    <div class="card">
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9781984877925.jpg" class="card-img-top" alt="WILL">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">WILL</h3>
+                            <p class="card-text"><small class="text-muted">Will Smith with Mark Manson</small></p>
+                            <p class="card-text">The actor, producer and musician tells his life story and lessons he learned along the way.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/1984877925?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="d-flex align-items-center">
                 <p class="subtitle-bestsellers">Paperback Trade Fiction</p> 
-                <figure class="flecha"></figure>
+                <figure class="flecha wow animate__rotateIn wow anima animate__animated"></figure>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 row-cols-md-3 g-4 mb-5">
-                <div class="col">
-                <div class="card">
-                    <figure><img src="..\images\imagesbestsellers\9781501110375.jpg" class="card-img-top" alt="IT ENDS WITH US"></figure>
-                    <div class="card-body">
-                    <h3 class="card-title fw-bold">IT ENDS WITH US</h3>
-                    <p class="card-text"><small class="text-muted">Colleen Hoover</small></p>
-                    <p class="card-text">A battered wife raised in a violent home attempts to halt the cycle of abuse.</p>
-                    <a rel="noreferrer" href="https://www.amazon.com/Ends-Us-Novel-Colleen-Hoover-ebook/dp/B0176M3U10?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
-                </div>
-                </div>
-                <div class="col">
+                <div class="col opacity">
                     <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9781501161933.jpg" class="card-img-top" alt="THE SEVEN HUSBANDS OF EVELYN HUGO"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">THE SEVEN HUSBANDS OF EVELYN HUGO</h3>
-                        <p class="card-text"><small class="text-muted">Taylor Jenkins Reid</small></p>
-                        <p class="card-text">A movie icon recounts stories of her loves and career to a struggling magazine writer.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/1501161938?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9780062060624.jpg" class="card-img-top" alt="THE SONG OF ACHILLES"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">THE SONG OF ACHILLES</h3>
-                        <p class="card-text"><small class="text-muted">Madeline Miller</small></p>
-                        <p class="card-text">A reimagining of Homer’s “Iliad” that is narrated by Achilles' companion Patroclus.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/The-Song-Achilles-A-Novel/dp/0062060627?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
+                        <div class="container-img">
+                            <img src="..\images\imagesbestsellers\9781501110375.jpg" class="card-img-top" alt="IT ENDS WITH US">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">IT ENDS WITH US</h3>
+                            <p class="card-text"><small class="text-muted">Colleen Hoover</small></p>
+                            <p class="card-text">A battered wife raised in a violent home attempts to halt the cycle of abuse.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/Ends-Us-Novel-Colleen-Hoover-ebook/dp/B0176M3U10?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col opacity">
                     <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9780593336823.jpg" class="card-img-top" alt="THE LOVE HYPOTHESIS"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">THE LOVE HYPOTHESIS</h3>
-                        <p class="card-text"><small class="text-muted">Ali Hazelwood</small></p>
-                        <p class="card-text">A young professor agrees to pretend to be a third-year Ph.D. candidate’s boyfriend.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/dp/0593336828?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
-                    </div>
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9781501161933.jpg" class="card-img-top" alt="THE SEVEN HUSBANDS OF EVELYN HUGO">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">THE SEVEN HUSBANDS OF EVELYN HUGO</h3>
+                            <p class="card-text"><small class="text-muted">Taylor Jenkins Reid</small></p>
+                            <p class="card-text">A movie icon recounts stories of her loves and career to a struggling magazine writer.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/1501161938?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col opacity">
                     <div class="card">
-                    <figure><img src="../images/imagesbestsellers\9781476753195.jpg" class="card-img-top" alt="UGLY LOVE"></figure>
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold">UGLY LOVE</h3>
-                        <p class="card-text"><small class="text-muted">Colleen Hoover</small></p>
-                        <p class="card-text">A casual sexual relationship between Tate and Miles becomes more complicated than they expected.</p>
-                        <a rel="noreferrer" href="https://www.amazon.com/Ugly-Love-Novel-Colleen-Hoover-ebook/dp/B00HB62MC0?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9780062060624.jpg" class="card-img-top" alt="THE SONG OF ACHILLES">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">THE SONG OF ACHILLES</h3>
+                            <p class="card-text"><small class="text-muted">Madeline Miller</small></p>
+                            <p class="card-text">A reimagining of Homer’s “Iliad” that is narrated by Achilles' companion Patroclus.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/The-Song-Achilles-A-Novel/dp/0062060627?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
+                </div>
+                <div class="col opacity">
+                    <div class="card">
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9780593336823.jpg" class="card-img-top" alt="THE LOVE HYPOTHESIS">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">THE LOVE HYPOTHESIS</h3>
+                            <p class="card-text"><small class="text-muted">Ali Hazelwood</small></p>
+                            <p class="card-text">A young professor agrees to pretend to be a third-year Ph.D. candidate’s boyfriend.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/dp/0593336828?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col opacity">
+                    <div class="card">
+                        <div class="container-img">
+                            <img src="../images/imagesbestsellers\9781476753195.jpg" class="card-img-top" alt="UGLY LOVE">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">UGLY LOVE</h3>
+                            <p class="card-text"><small class="text-muted">Colleen Hoover</small></p>
+                            <p class="card-text">A casual sexual relationship between Tate and Miles becomes more complicated than they expected.</p>
+                            <a rel="noreferrer" href="https://www.amazon.com/Ugly-Love-Novel-Colleen-Hoover-ebook/dp/B00HB62MC0?tag=NYTBSREV-20" type="button" class="mt-auto text-decoration-none button__card">BUY</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
         <footer class="container-fluid p-0 bg-light mt-5">
             <div class="footer d-flex justify-content-between align-items-center flex-wrap p-4">
-              <figure class="img-banner">
-              </figure>
-              <p class="animate__animated animate__pulse">All rights reserved</p>
-              <div class="rrss">
-                <div class="rrss-fb"><a rel="noopener" href="#">
-                </a></div>
-                <div class="rrss-ig"><a rel="noopener" href="#">
-                </a></div>
-                <div class="rrss-tw"><a rel="noopener" href="#">
-                </a></div>
-              </div>
+                <figure class="img-banner">
+                </figure>
+                <p>All rights reserved</p>
+                <div class="rrss">
+                    <div class="rrss-fb">
+                        <a rel="noopener" href="#"></a>
+                    </div>
+                    <div class="rrss-ig">
+                        <a rel="noopener" href="#"></a>
+                    </div>
+                    <div class="rrss-tw">
+                        <a rel="noopener" href="#"></a>
+                    </div>
+                </div>
             </div>
-          </footer>
+        </footer>
+		<script src="../wow.js"></script>
+		<script>
+			new WOW().init();
+		</script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
